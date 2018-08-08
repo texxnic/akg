@@ -1,0 +1,214 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+ .btn-slider {
+ 	h5{
+ 		font-size: 0.7em;
+ 	}
+ }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+		.sliderMain{
+			height:450px;
+		}
+	 	.mapSlider{
+			display:none;
+		}
+		.geodesyItem{
+			display:none;
+		}
+		.stonesBack{
+			display:none;
+		}
+		.stonesFront{
+			display:none;
+		}
+		.island{
+			display:none;
+		}
+
+		.mapSliderMob{
+
+			  height: 272px;
+  width: 350px;
+  top: -30px;
+  left:-140%;
+  right:-70%;
+    margin-left:auto;
+    margin-right:auto;
+  
+  position: absolute;
+  background-image: url('img/sliderSprite.png');
+  background-repeat: no-repeat;
+  background-position: -60px -280px;
+  z-index: -1;
+  transform:scale(0.4);
+		}
+		.geodesyItemMob{
+			  height: 313px;
+			  transform:scale(0.4);
+  width: 202px;
+  top: 0px;
+  left:-70%;
+  right:-160%;
+    margin-left:auto;
+    margin-right:auto;
+  
+  position: absolute;
+  background-image: url('img/sliderSprite.png');
+  background-repeat: no-repeat;
+  background-position: -750px -280px;
+  z-index: -1;
+		}
+		.stonesBackMob{
+			  top: 80px;
+  left:-70%;
+  right:-70%;
+    margin-left:auto;
+    margin-right:auto;
+  width:980px; 
+  height:268px;
+  position: absolute;
+  background-image: url('img/sliderSprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  z-index: -1;
+  transform:scale(0.4);
+		}
+		.stonesFrontMob{
+			top: 80px;
+  left:-70%;
+  right:-70%;
+    margin-left:auto;
+    margin-right:auto;
+  width:980px; 
+  height:298px;
+  position: absolute;
+  background-image: url('img/sliderSprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 -1109px;
+  z-index: 15;
+  transform:scale(0.4);
+		}
+		.islandMob{
+			  top: -100px;
+  left:-73%;
+  right:-70%;
+  margin-right:auto;
+  margin-left:auto;
+  width:980px; 
+  height:510px;
+  position: absolute;
+  background-image: url('img/sliderSprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 -596px;
+  transform:scale(0.4);
+
+		}
+
+
+
+	 .btn-slider {
+ 	h5{
+ 		font-size: 0.5em;
+ 	}
+ }
+.testimonials{
+	h1{
+		font-size:2em;
+	}
+}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .thumbTall{
+  	width:auto !important;
+	height:100% !important;
+  }
+  	.islandMob{
+			  
+  left:-85%;
+  right:-70%;
+ 
+  
+		}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+		.mapSliderMob{
+			display:none;
+		}
+		.geodesyItemMob{
+			display:none;
+		}
+		.stonesBackMob{
+			display:none;
+		}
+		.stonesFrontMob{
+			display:none;
+		}
+		.islandMob{
+			display:none;
+		}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

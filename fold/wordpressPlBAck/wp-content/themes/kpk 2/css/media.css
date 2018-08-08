@@ -1,0 +1,69 @@
+@media screen and (max-width: 1600px) {
+ .pageContent{
+ 	 width: calc(100% - 400px);
+ }
+ .calcResults {
+    width: 40%;
+}
+}
+@media screen and (max-width: 900px) {
+ .pageContent{
+ 	 width: 100vw;
+ }
+ .pageBack{
+ 	width: 100vw;
+ }
+ .menuOver{
+ 	width: 100%;
+ 	left:-100%;
+ 	min-width: 300px;
+ }
+ .menuLink{
+ 	width: 100%;
+ }
+ .contactDivMenu{
+ 	width: 100%;
+ }
+ .savedLogo{
+ 	display: none;
+ }
+ .firtJumboText{
+ 	margin: 0 5% 10% 10%;
+ }
+ .savedElement{
+ 	flex-direction: column;
+    text-align: center;
+}
+.TAcenterMobile{
+	text-align: center;
+}
+.paymentTypes{
+	flex-direction: column;
+}
+}
+@media screen and (min-width: 900px) {
+	#menuButtonInMenu, #menuButton{
+		display: none;
+	}
+}
+@media screen and (max-width: 1300px) {
+ .calcGraphCommonWrapper{
+ 	flex-direction: column;
+ 	align-items: center;
+ 	
+ }
+ .calcGraph{
+ 	width: 100%;
+ 	height: auto;
+ 	max-width: 600px;
+ }
+ .calcResults{
+ 	width: 100%;
+ 	margin-top: 20px; 
+ }
+ .graphImgCalc{
+ 	    width: 100%;
+    max-width: initial;
+    height: auto;
+ }
+}

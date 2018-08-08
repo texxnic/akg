@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="87" height="27" viewBox="0 0 87 27">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 37.5px;
+      }
+
+      .cls-2 {
+        fill: #f1f0ee;
+        font-family: "GothamPro-BlackItalic";
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <text x="3" y="27" class="cls-1"><tspan class="cls-2">AKG</tspan></text>
+</svg>

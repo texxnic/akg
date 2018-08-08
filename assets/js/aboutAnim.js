@@ -1,0 +1,1 @@
+TweenMax.from($('.aboutJumbo__logo'), 1.5, { css: { scale: 0.8, opacity: 0} });

@@ -1,0 +1,307 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Saphali Woocommerce Russian"
+msgstr ""
+
+#. Short description.
+msgid ""
+"Набор русских дополнений к интернет-магазину на Woocommerce.\n"
+"Adds Russian localization &amp; special Tools in"
+msgstr ""
+
+#. Screenshot description.
+msgid "Улучшенная русская локализация Woocommerce. В общий список валют добавлены — Украинская гривна (грн.), Российский рубль (руб.), Белорусский рубль (руб.), Armenian dram (Դրամ), Киргизский сом (сом) и Казахстанский тенге (тңг)"
+msgstr ""
+
+#. Screenshot description.
+msgid "Управление полями на странице заказа и на странице профиля. Функция позволяет настроить заказную форму регистрации, чтобы настроить магазин на упрощение оформления заказа. Вы можете сделать некоторые поля необязательными при регистрации/оформлении заказа либо удалить их полностью."
+msgstr ""
+
+#. Screenshot description.
+msgid "Управление полями (перемещение в нужную позицию)."
+msgstr ""
+
+#. Screenshot description.
+msgid "Как выглядит на странице."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Управление количеством колонок в каталоге товаров и рубриках."
+msgstr ""
+
+#. Found in description header.
+msgid "Интегрирует в магазин:"
+msgstr ""
+
+#. Found in description header.
+msgid "Особенности"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Валюты СНГ - Российский рубль (RUB), Украинскую гривну (UAH), Белорусский рубль (руб.), Armenian dram (Դրամ), Киргизский сом (сом) и Казахстанский тенге (тңг), Узбекский сум</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Возможность настроить заказную форму для оформления заказа"
+msgstr ""
+
+#. Found in description list item.
+msgid "Управление количеством колонок в каталоге"
+msgstr ""
+
+#. Found in description list item.
+msgid "Улучшенная русская локализация Woocommerce (более полная поддержка русского языка)."
+msgstr ""
+
+#. Found in description list item.
+msgid "В общий список валют добавлены — Украинская гривна (грн.), Российский рубль (руб.), Белорусский рубль (руб.), Armenian dram (Դրամ), Киргизский сом (сом) и Казахстанский тенге (тңг), Узбекский сум"
+msgstr ""
+
+#. Found in description list item.
+msgid "Управление полями на странице оформления заказа и на странице профиля. Функция позволяет настроить заказную форму для оформления заказа. Можно сделать некоторые поля необязательными при оформлении заказа или удалить их полностью, тем самым упростить оформления заказа. Также можно добавить свои специальные поля."
+msgstr ""
+
+#. Found in description list item.
+msgid "Управление количеством колонок в каталоге товаров (Магазин) и категориях."
+msgstr ""
+
+#. Found in description list item.
+msgid "Плагин создан с целью упростить разработку интернет-магазинов для российского рынка."
+msgstr ""
+
+#. Found in description list item.
+msgid "Плагин не изменяет оригинальные файлы Woocommerce, вы можете обновлять плагин Woocommerce, каждый раз при появлении новых версий!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"WooCommerce Russian! WooCommerce по-русски!\n"
+"Русскоязычные функциональные дополнения для Woocommerce - специально для русского рынка."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"Русский интерфейс. <strong>Важное замечание!</strong>\n"
+"Мы более не исправляем русский перевод в плагине - https://wordpress.org/plugins/woocommerce/, т.к. он уже корректный. Перевод нашего плагина полезен тем, кто использует Woocommerce 2.0 и ниже, т.е. старые версии плагина.\n"
+"Остальным просто нужно установить https://wordpress.org/plugins/woocommerce/ и все. Если возникают с переводом проблемы с установленной версией WC, то  нужно в самом WC произвести обновление. Можно зайти в “Woocommerce =&gt; System Status (Магазин =&gt; Состояние системы)”, перейти на вкладку “Tools” (Инструменты), и нажать на кнопку “Force Translation Upgrade”, чтобы обновить перевод.\n"
+"Теперь основные файлы локализации (помимо тех, которые в Saphali woocommerce russian) находятся здесь:\n"
+"wp-content/languages/plugins/woocommerce-admin-ru_RU.mo (админ часть), wp-content/languages/plugins/woocommerce-ru_RU.mo (пользовательская часть).\n"
+"Также <em>как вариант</em> можете скачать файл http://saphali.com/lang.zip и распаковав скопируйте их тогда сюда wp-content/languages/plugins"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Валюты СНГ - Российский рубль (RUB), Украинскую гривну (UAH), Белорусский рубль (руб.), Armenian dram (Դրամ), Киргизский сом (сом) и Казахстанский тенге (тңг), Узбекский сум"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>ВНИМАНИЕ!</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"Вы можете подключить к магазину все самые популярные российские и украинские платежные системы:\n"
+"QIWI, Приват24, LiqPay, WebMoney, Яндекс.Деньги, Интеркасса, PayPal для России и Украины, Z-payment, ChronoPay!\n"
+"Подробнее о плагинах платежных шлюзов: http://saphali.com/wordpress/payment-gateways"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Другие русские плагины для интернет-магазина на Woocommerce смотрите в нашем каталоге http://saphali.com/wordpress/woocommerce-plugins"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Разархивируйте содержимое zip файла в папку плагинов вашего сайта (wp-content/plugins/), используя вашу любимую FTP программу."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Активируйте плагин на странице \"Плагины\" в панели администратора."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Все установка завершена."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлен фильтр количества колонок."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "В Woocommerce 2.2 и выше отключена дополнительная локализация для WC, т.к. в этом уже нет надобности."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Изменения в связи с выходом Woocommerce 2.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Исправлен вывод дополнительных полей для версий WC 2.2.0 - 2.2.2."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Вывод дополнительных полей в профиле/аккаунте покупателя."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Изменения в связи с выходом Woocommerce 2.2."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлен литовский лит."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Изменения в связи с выходом Woocommerce 2.1.0."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "В управлении полями реализована возможность использовать различные типы полей (select, checkbox, textarea)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Поля, которые имеют пустые заголовки не выводятся в письме, в заказах"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлен узбекский сум"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Небольшие исправления связанные с символом валюты RUB"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Изменения связанные с совместимостью WPML."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлен фильтр отображения полей по умолчанию. Отсутствие этого фильтра приводило к тому, что поля подтягивались javascript'oм не так как нужно (название поля и его обязательность отображалось как по умолчанию в WC)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Повышение приоритета знака валюты по Лебедеву (для рубля) над встроенным."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Исправлена ошибка отображения дополнительных полей заполненных покупателем (в письме и в заказе)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Устранена ошибка не сохранения некоторых атрибутов поля (напр, поле \"Название компании\" теперь можно отмечать как обязательное, указывать текст по умолчанию). "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавленные произвольные поля теперь можно сортировать вместе со стандартными полями (устранена разрозненность сортировки полей, которые есть по умолчанию, и тех, которые добавлены по надобности)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Исправлены некритичные ошибки."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлена функция вывода дополнительных полей в письмах и при просмотре заказа покупателем."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлены валюты: Киргизский сом (сом) и Казахстанский тенге (тңг)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Мелкие исправления по локализации под WooCommerce"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлена поддержка валюты русского рубля в виде символа."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Завершение локализации под WooCommerce 2.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Расширение локализации под WooCommerce"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Адаптация под WooCommerce 2.0.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Переписан код, т.к. на серверах, в которых php не понимал ограничители &lt;? и &lt;?= выдавал ошибку \"Parse error: syntax error, unexpected...\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ошибка загрузки в repository"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "На странице управления дополнительными полями и полями доставки исправлена ошибка добавления полей."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлен вывод дополнительных полей на странице профиля пользователя, а также на странице редактирования заказа."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "На странице управления дополнительными полями и полями доставки в заголовке к атрибутам \"Название\" и \"Класс поля\" добавлена подсказка."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Задан стиль для неактивного поля."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Небольшие исправления."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "На странице управления дополнительными полями и полями доставки в заголовке к атрибуту clear добавлена подсказка."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Добавлено управление атрибутами clear и class в управлении полями."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Исправлена ошибка в указании обязательного поля в управлении дополнительными полями и полями доставки."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Исправлена ошибка в управлении полями на странице заказа и на странице профиля."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Улучшенная русская локализация Woocommerce (корректировка перевода и дополнительный перевод)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "В общий список валют добавлены — Украинская гривна (грн.), Российский рубль (руб.) и Белорусский рубль (руб.)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Управление полями на странице заказа и на странице профиля. Функция позволяет настроить заказную форму регистрации, чтобы настроить магазин на упрощенение оформления заказа. Вы можете сделать некоторые поля необязательными при регистрации/оформленнии заказа либо удалить их полностью."
+msgstr ""
+
+#. Found in remaining content header.
+msgid "License"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Translations"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Demo"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Этот плагин является бесплатным для всех, поскольку он выпущен под GPL. Вы можете использовать его бесплатно в ваших интернет-магазинах. Но если Вам нравится этот плагин, вы можете поблагодарить нас, если поделитесь с друзями и коллегами ссылкой на наш сайт."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Мы допускаем, что русскую локализацию для Woocommerce можно еще больше улучшить. Если вы заметили в настройках Woocommerce некорректный перевод или его можно заменить на альтернативный и более подходящий, напишите об этом нам."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Проверить этот плагин в работе вы можете на нашем сайте http://saphali.com/ - на странице \"Демо Интернет-магазин\"."
+msgstr ""
