@@ -19,29 +19,64 @@
 	TweenLite.set(splith11.chars, { x: -20, opacity: 0 });
 	TweenLite.set(splith12.chars, { x: -20, opacity: 0 });
 	TweenLite.set($('.moreIndexButton'), { opacity: 0 });
+	TweenLite.set($('.firstStatInfo'), { css: { scale: 1.1, opacity: 0, webkitFilter: "blur(5px)" } });
+	TweenLite.set($('.secondStatInfo'), { css: { scale: 1.1, opacity: 0, webkitFilter: "blur(5px)" } });
 
 	// взрываем текст
 
 	$(document).ready(function() {
-	    $('#fullpage').fullpage({
-	        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-	        anchors: ['accountant', 'law', 'employee', 'footer'],
-	        scrollOverflow: true,
-	        recordHistory: false,
-	        afterLoad: function(origin, destination) {
-	            var loadedSection = this;
-	            animateEl(destination.index);
-	            console.log(destination.index);
-	        },
+	    var t2 = performance.now();
+	    var loadDelta = t2 - t1;
+	    if (loadDelta <= 4000) {
+	        setTimeout(function() {
+	            $('.preloader').addClass('preloader__runAnimationNow');
+	        }, 4000 - loadDelta);
+	        setTimeout(function() {
+	            TweenMax.staggerFrom('.menuLink', 0.9, { x: 30, y: -25, opacity: 0 }, 0.15);
+	            $('#fullpage').fullpage({
+	                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+	                anchors: ['accountant', 'law', 'employee', 'footer'],
+	                scrollOverflow: true,
+	                recordHistory: false,
+	                afterLoad: function(origin, destination) {
+	                    var loadedSection = this;
+	                    animateEl(destination.index);
 
 
-	    });
+	                },
+
+
+	            });
+	        }, 3900 - loadDelta);
+	    } else {
+	        TweenMax.staggerFrom('.menuLink', 0.9, { x: 30, y: -25, opacity: 0 }, 0.15);
+	        console.log('more');
+	        $('.preloader').addClass('preloader__runAnimationNow');
+	        $('#fullpage').fullpage({
+	            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+	            anchors: ['accountant', 'law', 'employee', 'footer'],
+	            scrollOverflow: true,
+	            recordHistory: false,
+	            afterLoad: function(origin, destination) {
+	                var loadedSection = this;
+	                animateEl(destination.index);
+
+
+	            },
+
+
+	        });
+	    }
 
 
 
-	    TweenMax.staggerFrom('.menuLink', 0.9, { x: 30, y: -25, opacity: 0 }, 0.15);
-	    TweenLite.set($('.firstStatInfo'), { css: { scale: 1.1, opacity: 0, webkitFilter: "blur(5px)" } });
-	    TweenLite.set($('.secondStatInfo'), { css: { scale: 1.1, opacity: 0, webkitFilter: "blur(5px)" } });
+
+
+
+
+
+
+
 
 
 
@@ -52,6 +87,7 @@
 
 
 	function animateEl(index) {
+
 	    var elements = ['h1-', 'p-', 'count0-', 'count01-'];
 	    var numberedEl = [];
 	    if (index < 3) {
@@ -107,21 +143,23 @@
 	}
 
 	function runNumbers0(argument) {
-		
-			TweenMax.to($('.moreIndexButton')[0], 1.5, { opacity: 1} );
-	        document.getElementById('count0-0').innerHTML = 14;
-	        document.getElementById('count01-0').innerHTML = 17;
-	        TweenMax.to($('.statInfo0'), 1.5, { css: { scale: 1, opacity: 1, webkitFilter: "blur(0px)" } });
+
+	    TweenMax.to($('.moreIndexButton')[0], 1.5, { opacity: 1 });
+	    document.getElementById('count0-0').innerHTML = 14;
+	    document.getElementById('count01-0').innerHTML = 17;
+	    TweenMax.to($('.statInfo0'), 1.5, { css: { scale: 1, opacity: 1, webkitFilter: "blur(0px)" } });
 	}
+
 	function runNumbers1(argument) {
-		TweenMax.to($('.moreIndexButton')[1], 1.5, { opacity: 1} );
-	        document.getElementById('count0-1').innerHTML = 2300;
-	        document.getElementById('count01-1').innerHTML = 60;
-	        TweenMax.to($('.statInfo1'), 1.5, { css: { scale: 1, opacity: 1, webkitFilter: "blur(0px)" } });
+	    TweenMax.to($('.moreIndexButton')[1], 1.5, { opacity: 1 });
+	    document.getElementById('count0-1').innerHTML = 2300;
+	    document.getElementById('count01-1').innerHTML = 60;
+	    TweenMax.to($('.statInfo1'), 1.5, { css: { scale: 1, opacity: 1, webkitFilter: "blur(0px)" } });
 	}
+
 	function runNumbers2(argument) {
-		TweenMax.to($('.moreIndexButton')[2], 1.5, { opacity: 1} );
-	        document.getElementById('count0-2').innerHTML = 70;
-	        document.getElementById('count01-2').innerHTML = 300;
-	        TweenMax.to($('.statInfo2'), 1.5, { css: { scale: 1, opacity: 1, webkitFilter: "blur(0px)" } });
+	    TweenMax.to($('.moreIndexButton')[2], 1.5, { opacity: 1 });
+	    document.getElementById('count0-2').innerHTML = 70;
+	    document.getElementById('count01-2').innerHTML = 300;
+	    TweenMax.to($('.statInfo2'), 1.5, { css: { scale: 1, opacity: 1, webkitFilter: "blur(0px)" } });
 	}

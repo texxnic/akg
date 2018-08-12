@@ -1,0 +1,84 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg version="1.1" viewBox="0 0 1000 333" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" style="">
+    <style type="text/css">
+    .st0 {
+        fill: #f2f3f8;
+    }
+    </style>
+    <path class="st0 KusoMiYj_0" stroke="#151726" stroke-width="3" d="m232.5 171.5l43.5 74.8h28.8c-6.4-10.2-67.1-114.1-72.2-124.4l-62.7 108.7-23.3 40.6h-86.4c4.8-8 37.1-64.3 68.1-118.3 18.2-31.6 38.4-67.1 61.1-105.8h28.8l-59.5 102.9-55.3 96.2h28.8c39.3-69.3 63.9-110.2 100.3-174.2 2.2 3.8 114.8 198.8 115.4 199.2h-86.3l-43.5-74.8 14.4-24.9z"></path>
+    <path class="st0 KusoMiYj_1" stroke="#151726" stroke-width="3" d="M534,176.9l102.6,94.3H526.3l-83.8-76.7L572.4,72h-36.1l-93.7,90.5V72h-24.9v174.2h44.1l27.5,24.9h-96.5V47.1   h74.8v55l58.8-55h109L479,194.2l56.9,52.1h36.8l-56.9-52.4L534,176.9z"></path>
+    <path class="st0 KusoMiYj_2" stroke="#151726" stroke-width="3" d="M926.2,146.5v124.7H788.5c-59.8-2.6-107.1-51.8-107.1-111.9c0-60.4,47.3-109.7,107.1-112.2h137.8v75.1H788.5   c-18.9,1.6-33.2,17.9-33.2,36.8c0,19.5,14.4,34.8,33.2,37.4h87.6v24.9h-87.6c-32.3-2.6-57.9-29.1-57.9-62.3c0-32,24.6-59.5,56.6-62   H901V72H788.5c-45.7,2.6-82.2,40.6-82.2,87.3c0,46.4,36.4,84.4,82.2,87H901v-74.8H783v-24.9H926.2z"></path>
+    <style data-made-with="vivus-instant">
+    .KusoMiYj_0 {
+        stroke-dasharray: 1697 1699;
+        stroke-dashoffset: 1698;
+        animation: KusoMiYj_draw_0 7200ms ease 0ms infinite, KusoMiYj_fade 7200ms linear 0ms infinite;
+    }
+
+    .KusoMiYj_1 {
+        stroke-dasharray: 2150 2152;
+        stroke-dashoffset: 2151;
+        animation: KusoMiYj_draw_1 7200ms ease 0ms infinite, KusoMiYj_fade 7200ms linear 0ms infinite;
+    }
+
+    .KusoMiYj_2 {
+        stroke-dasharray: 2440 2442;
+        stroke-dashoffset: 2441;
+        animation: KusoMiYj_draw_2 7200ms ease 0ms infinite, KusoMiYj_fade 7200ms linear 0ms infinite;
+    }
+
+    @keyframes KusoMiYj_draw {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes KusoMiYj_fade {
+        0% {
+            stroke-opacity: 1;
+        }
+        94.44444444444444% {
+            stroke-opacity: 1;
+        }
+        100% {
+            stroke-opacity: 0;
+        }
+    }
+
+    @keyframes KusoMiYj_draw_0 {
+        11.11111111111111% {
+            stroke-dashoffset: 1698
+        }
+        38.88888888888889% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes KusoMiYj_draw_1 {
+        18.055555555555554% {
+            stroke-dashoffset: 2151
+        }
+        45.83333333333333% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes KusoMiYj_draw_2 {
+        25% {
+            stroke-dashoffset: 2441
+        }
+        52.77777777777778% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    </style>
+</svg>

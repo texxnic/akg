@@ -209,7 +209,7 @@ button:active {
   background: linear-gradient(#ef5858, #e6305f); }
 
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 999;
   width: 100%;
   color: white;
@@ -317,7 +317,7 @@ button:active {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   z-index: 55;
   display: flex;
   flex-direction: column;

@@ -8,7 +8,8 @@
 </head>
 
 <body>
-
+        
+        <?php include_once 'modules/preloader.php';?>
         <?php include_once 'modules/header.php';?>
 
 
