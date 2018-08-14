@@ -2,7 +2,7 @@
             <div class="container-lessfluid">
                 <h2>Контакты</h2>
                 <div class="container-lessfluid contentPaddings row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 cardPaddings cardLightShadow contactCard">
                         <h3>Есть вопросы?</h3>
                         <p>Воспользуйтесь формой снизу для вопроса или заявки</p>
                         <div class="contactForm">
@@ -26,7 +26,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <p>Телефон</p>
-                                        <input type="tel" id="phone" name="phone">
+                                        <input type="tel" id="phone" name="phone" data-mask="00/00/0000" data-mask-selectonfocus="true">
                                     </div>
                                     <div class="col-md-6">
                                         <p>E-mail</p>
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <button type="submit">Отправить</button>
+                                        <button class="contactCard__submit" type="submit">Отправить</button>
                                     </div>
                                 </div>
                             </form>
@@ -49,6 +49,7 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-4 contactsAddres">
+                        <img src="../assets/img/mapDotted.svg" class="mapDotted" alt="">
                         <h3>Адрес</h3>
                         <p>ул. Земляной Вал, д. 9 Москва, 105064</p>
                         <h3>Реквизиты</h3>
@@ -65,3 +66,8 @@
                 </div>
             </div>
         </div>
+        <script src="../assets/js/jquery.mask.min.js"></script>
+        <script src="../assets/js/validForm.js"></script>
+        <script>
+            // $('#phone').mask('+7 000 000-00-00')
+        </script>

@@ -2287,6 +2287,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   font-size: 14px;
+  color: #030c52;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -2304,6 +2305,7 @@ a {
 
 p {
   margin: 0;
+  max-width: 60em;
 }
 
 h1 {
@@ -3682,6 +3684,8 @@ input[type=range]:focus::-ms-fill-upper {
   width: 30%;
   bottom: 0;
   right: 0;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 40, 0);
 }
 
 .advantagesCards {
@@ -3700,7 +3704,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .advantagesCards .advantagesCard {
   display: inline-block;
-  height: 19em;
+  height: 13em;
   width: 18em;
   margin-right: 2em;
   background-color: rgba(3, 12, 82, 0.6);
@@ -3710,7 +3714,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .advantagesCards .advantagesCard:first-of-type {
-  margin-left: 5%;
+  margin-left: 15%;
 }
 
 .advantagesCards .advantagesCard__text {
@@ -3740,6 +3744,39 @@ input[type=range]:focus::-ms-fill-upper {
 
 .cardsPaddings {
   padding-top: 3em;
+}
+
+.contactCard {
+  background-color: #fff;
+  z-index: 3;
+}
+
+.contactCard__submit {
+  background-color: #f0f0fd;
+}
+
+.aboutAdv__text {
+  font-size: 1.1em;
+}
+
+.contactsAddres {
+  position: relative;
+  z-index: 2;
+}
+
+.contactsAddres .mapDotted {
+  position: absolute;
+  height: 30em;
+  z-index: 1;
+  top: -5%;
+  left: -20%;
+}
+
+.contactsAddres p,
+.contactsAddres h3,
+.contactsAddres a {
+  position: relative;
+  z-index: 2;
 }
 
 /*$media-phone: "only screen and (max-width : 350px)";
