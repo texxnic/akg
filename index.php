@@ -113,6 +113,6 @@
 <script src="assets/js/fullpage.min.js"></script>
 <script src="assets/js/textAnim.js"></script>
 <script src="assets/js/odometer.min.js"></script>
-<script src="assets/js/common.js"></script>
+<script src="assets/js/common.js?ver=2"></script>
 
 </html>

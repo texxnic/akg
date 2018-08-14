@@ -5,12 +5,19 @@ $mainColor: #e6305f;
 $bgColor: #1c1b1d;
 $bgGrad: linear-gradient(to bottom, #1c1b1d 0%, #151726 100%);
 
-$blueAccent: #151726;
+$blueAccent: #030c52;
 $white: #f9faff;
 $gradient: linear-gradient($secColor, $mainColor);
 $grayOnWhite: #626165;
 $grayOnDark: #a6a5a9;
 $lightAccent: #f0f0fd;
+
+
+
+
+
+
+
 
 
 
@@ -38,6 +45,13 @@ $media-small: "only screen and (max-width : 750px)";
 $media-medium: "only screen and (max-width : 992px)";
 $media-large: "only screen and (max-width : 1200px)";
 $media-hires: "only screen and (min-width : 2000px)";
+
+
+
+
+
+
+
 
 
 
@@ -938,11 +952,16 @@ hr {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    .odometer {
+        margin-right: 0.1em;
+    }
 }
 
 .whyUs__p {
-    color: $grayOnWhite;
-    font-size: 1.2em;
+    color: $blueAccent;
+    font-size: 1.1em;
     padding-right: 3em;
 }
 
@@ -1094,6 +1113,13 @@ input[type=radio] {
 
 
 
+
+
+
+
+
+
+
 /*
   Change the look'n'feel of labels (which are adjacent to radiobuttons).
   Add some margin, padding to label
@@ -1121,6 +1147,13 @@ input[type=radio]+label {
     margin-top: 1.5em;
     border: 1px solid #ebecec;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1188,6 +1221,13 @@ input[type=range]::-ms-track {
 
 
 
+
+
+
+
+
+
+
 /* Special styling for WebKit/Blink */
 
 input[type=range]::-webkit-slider-thumb {
@@ -1218,6 +1258,13 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
+
+
+
+
+
+
+
 /* All the same stuff for Firefox */
 
 input[type=range]::-moz-range-thumb {
@@ -1231,6 +1278,13 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
     background: $gradient;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1487,6 +1541,109 @@ input[type=range]:focus::-ms-fill-upper {
     }
 }
 
+.cardPaddings {
+    padding: 3em 4em;
+}
+
+.cardLightShadow {
+    -webkit-box-shadow: 3px 0px 63px 1px rgba(240, 240, 253, 1);
+    -moz-box-shadow: 3px 0px 63px 1px rgba(240, 240, 253, 1);
+    box-shadow: 3px 0px 63px 1px rgba(240, 240, 253, 1);
+}
+
+.aboutFirstCard {
+    background-color: #fff;
+    margin-top: 2em;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        position: absolute;
+        content: "&";
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 25em;
+        top: -40px;
+        left: 10px;
+        color: $white;
+        line-height: 0.8;
+        z-index: 2;
+    }
+
+    .aboutFirstCard__p {
+        font-size: 1.2em;
+        position: relative;
+        z-index: 3;
+        color: $blueAccent;
+    }
+}
+
+.aboutFirstCard__wrap {
+    position: relative;
+    .aboutFirstCard__img {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.advantagesCards {
+    min-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+    }
+    .advantagesCard {
+        display: inline-block;
+        height: 19em;
+        width: 18em;
+        margin-right: 2em;
+        background-color: rgba(3, 12, 82, 0.6);
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        &:first-of-type {
+            margin-left: 5%;
+        }
+    }
+    .advantagesCard__text {
+        font-size: 1.2em;
+        width: 60%;
+        white-space: pre-wrap;
+        position: absolute;
+        bottom: 0;
+        right: 1.15em;
+        text-align: right;
+        z-index: 3;
+    }
+    .advantagesCard__ghost {
+        position: absolute;
+        z-index: 2;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 25em;
+        bottom: -10%;
+        right: -10%;
+        color: #fb3636;
+        opacity: 1;
+        line-height: 0.6;
+        mix-blend-mode: color-dodge;
+
+    }
+
+}
+
+.cardsPaddings{
+        padding-top: 3em;
+}
+
+
 
 
 
@@ -1546,6 +1703,13 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+
+
 
 
 
