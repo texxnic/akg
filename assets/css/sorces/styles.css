@@ -766,6 +766,11 @@ hr {
   overflow: hidden;
   position: relative; }
 
+.videoPadWrap {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
 #vid {
   position: absolute;
   top: 50%;
@@ -789,7 +794,7 @@ hr {
 
 .videoDiv__hoverOver {
   position: absolute;
-  width: calc(100% - 30px);
+  width: 100%;
   height: 100%;
   z-index: 3;
   background-color: #ef5858;
@@ -809,9 +814,9 @@ hr {
 
 .videoDiv__textWrap {
   position: absolute;
-  bottom: 4em;
+  bottom: 2.5em;
   color: #f9faff;
-  left: 5em;
+  left: 2em;
   z-index: 5;
   padding-right: 1.5em; }
   .videoDiv__textWrap p {
@@ -852,6 +857,38 @@ input[type=radio] {
   display: none;
   margin: 10px; }
 
+input[type=checkbox] {
+  display: none;
+  margin: 10px; }
+
+input[type=checkbox] + label {
+  display: inline-block;
+  font-size: 0.8em;
+  background-color: #f0f0fd;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  color: #030c52;
+  text-align: center;
+  width: 100%; }
+
+.calc__Checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between; }
+
+.calcCheckBox {
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin: 0.3em; }
+
+.calcSum__cont {
+  display: flex;
+  align-items: center; }
+
+.calcSum__wrap {
+  white-space: nowrap; }
+
 /*
   Change the look'n'feel of labels (which are adjacent to radiobuttons).
   Add some margin, padding to label
@@ -887,6 +924,15 @@ input[type=radio]:checked + label {
   -moz-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51);
   box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51); }
 
+input[type=checkbox]:checked + label {
+  transition: 0.3s;
+  background: linear-gradient(#ef5858, #e6305f);
+  color: white;
+  border: none;
+  -webkit-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51);
+  -moz-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51);
+  box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51); }
+
 input[type=range] {
   -webkit-appearance: none;
   /* Hides the slider so that custom slider can be made */
@@ -909,6 +955,12 @@ input[type=range]::-ms-track {
   background: transparent;
   border-color: transparent;
   color: transparent; }
+
+.calc__ghost {
+  position: relative;
+  bottom: -22px;
+  z-index: -1;
+  color: #f0f0fd; }
 
 /* Special styling for WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
@@ -1231,7 +1283,9 @@ input[type=range]:focus::-ms-fill-upper {
     z-index: 1;
     top: -5%;
     left: -20%; }
-  .contactsAddres p, .contactsAddres h3, .contactsAddres a {
+  .contactsAddres p,
+  .contactsAddres h3,
+  .contactsAddres a {
     position: relative;
     z-index: 2; }
 
@@ -1254,13 +1308,20 @@ $media-hires: "only screen and (min-width : 2000px)";*/
   body {
     font-size: 10px; } }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
   .header__menu {
     display: none; }
   .header__menuButton {
     display: block; }
   .layer__textBlock {
-    width: 90%; } }
+    width: 90%; }
+  .aboutFirstCard__img {
+    display: none; }
+  .videoDiv__wrap {
+    height: 80vh;
+    padding-left: 0; }
+  .contactsAddres {
+    margin-top: 4em; } }
 
 @media only screen and (max-width: 375px) {
   body {

@@ -35,16 +35,18 @@ $lightAccent: #f0f0fd;
 
 
 
+
 /*colors*/
 
 
 /*media*/
 
 $media-phone: "only screen and (max-width : 375px)";
-$media-small: "only screen and (max-width : 750px)";
+$media-small: "only screen and (max-width : 767px)";
 $media-medium: "only screen and (max-width : 992px)";
 $media-large: "only screen and (max-width : 1200px)";
 $media-hires: "only screen and (min-width : 2000px)";
+
 
 
 
@@ -999,6 +1001,12 @@ hr {
     position: relative;
 }
 
+.videoPadWrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 #vid {
     position: absolute;
     top: 50%;
@@ -1024,7 +1032,7 @@ hr {
 
 .videoDiv__hoverOver {
     position: absolute;
-    width: calc(100% - 30px);
+    width: 100%;
     height: 100%;
     z-index: 3;
     background-color: $secColor;
@@ -1048,9 +1056,9 @@ hr {
 
 .videoDiv__textWrap {
     position: absolute;
-    bottom: 4em;
-    color: $white;
-    left: 5em;
+    bottom: 2.5em;
+    color: #f9faff;
+    left: 2em;
     z-index: 5;
     padding-right: 1.5em;
     p {
@@ -1104,13 +1112,43 @@ input[type=radio] {
     margin: 10px;
 }
 
+input[type=checkbox] {
+    display: none;
+    margin: 10px;
+}
 
+input[type=checkbox]+label {
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: #f0f0fd;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    color: $blueAccent;
+    text-align: center;
+    width: 100%;
+}
 
+.calc__Checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
 
+.calcCheckBox {
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 0.3em;
+}
 
+.calcSum__cont {
+    display: flex;
+    align-items: center;
+}
 
-
-
+.calcSum__wrap {
+    white-space: nowrap;
+}
 
 
 
@@ -1166,6 +1204,7 @@ input[type=radio]+label {
 
 
 
+
 /*
  Change background color for label next to checked radio button
  to make it look like highlighted button
@@ -1174,6 +1213,17 @@ input[type=radio]+label {
 input[type=radio]:checked+label {
 
     transform: scale(1.05);
+    transition: 0.3s;
+    background: $gradient;
+    color: white;
+    border: none;
+    -webkit-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51);
+    -moz-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51);
+    box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.51);
+}
+
+input[type=checkbox]:checked+label {
+
     transition: 0.3s;
     background: $gradient;
     color: white;
@@ -1213,6 +1263,12 @@ input[type=range]::-ms-track {
 
 
 
+.calc__ghost {
+    position: relative;
+    bottom: -22px;
+    z-index: -1;
+    color: $lightAccent;
+}
 
 
 
@@ -1267,6 +1323,7 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
+
 /* All the same stuff for Firefox */
 
 input[type=range]::-moz-range-thumb {
@@ -1280,6 +1337,7 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
     background: $gradient;
 }
+
 
 
 
@@ -1588,7 +1646,7 @@ input[type=range]:focus::-ms-fill-upper {
         bottom: 0;
         right: 0;
         opacity: 0;
-    transform: matrix(1, 0, 0, 1, 40, 0);
+        transform: matrix(1, 0, 0, 1, 40, 0);
     }
 }
 
@@ -1638,40 +1696,44 @@ input[type=range]:focus::-ms-fill-upper {
         opacity: 1;
         line-height: 0.6;
         mix-blend-mode: color-dodge;
-
     }
-
 }
 
-.cardsPaddings{
-        padding-top: 3em;
+.cardsPaddings {
+    padding-top: 3em;
 }
 
-.contactCard{
+.contactCard {
     background-color: #fff;
     z-index: 3;
 }
-.contactCard__submit{
+
+.contactCard__submit {
     background-color: $lightAccent;
 }
-.aboutAdv__text{
+
+.aboutAdv__text {
     font-size: 1.1em;
 }
-.contactsAddres{
+
+.contactsAddres {
     position: relative;
     z-index: 2;
-    .mapDotted{
+    .mapDotted {
         position: absolute;
         height: 30em;
         z-index: 1;
         top: -5%;
         left: -20%;
     }
-    p,h3,a{
+    p,
+    h3,
+    a {
         position: relative;
         z-index: 2;
     }
 }
+
 
 /*$media-phone: "only screen and (max-width : 350px)";
 $media-small: "only screen and (max-width : 750px)";
@@ -1710,6 +1772,16 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     .layer__textBlock {
         width: 90%;
     }
+    .aboutFirstCard__img {
+        display: none;
+    }
+    .videoDiv__wrap {
+        height: 80vh;
+        padding-left: 0;
+    }
+    .contactsAddres {
+        margin-top: 4em;
+    }
 }
 
 @media #{$media-phone} {
@@ -1729,6 +1801,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     align-items: center;
     justify-content: center;
 }
+
 
 
 
