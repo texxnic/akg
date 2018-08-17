@@ -36,6 +36,7 @@ $lightAccent: #f0f0fd;
 
 
 
+
 /*colors*/
 
 
@@ -46,6 +47,7 @@ $media-small: "only screen and (max-width : 767px)";
 $media-medium: "only screen and (max-width : 992px)";
 $media-large: "only screen and (max-width : 1200px)";
 $media-hires: "only screen and (min-width : 2000px)";
+
 
 
 
@@ -1078,13 +1080,19 @@ hr {
     #question {
         height: 20em;
     }
-    input {
+    input,textarea {
         width: 100%;
         border: none;
         background-color: #f0f0fd;
         height: 3em;
         margin-bottom: 1.5em;
         border-radius: 5px;
+        font-size: 1em;
+        padding: 1rem;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        color: #030c52;
+        vertical-align: top;
     }
     button {
         width: 100%;
@@ -1160,6 +1168,7 @@ input[type=checkbox]+label {
 
 
 
+
 /*
   Change the look'n'feel of labels (which are adjacent to radiobuttons).
   Add some margin, padding to label
@@ -1187,6 +1196,7 @@ input[type=radio]+label {
     margin-top: 1.5em;
     border: 1px solid #ebecec;
 }
+
 
 
 
@@ -1286,6 +1296,7 @@ input[type=range]::-ms-track {
 
 
 
+
 /* Special styling for WebKit/Blink */
 
 input[type=range]::-webkit-slider-thumb {
@@ -1324,6 +1335,7 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
+
 /* All the same stuff for Firefox */
 
 input[type=range]::-moz-range-thumb {
@@ -1337,6 +1349,7 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
     background: $gradient;
 }
+
 
 
 
@@ -1735,6 +1748,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
+
 /*$media-phone: "only screen and (max-width : 350px)";
 $media-small: "only screen and (max-width : 750px)";
 $media-medium: "only screen and (max-width : 992px)";
@@ -1801,6 +1815,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     align-items: center;
     justify-content: center;
 }
+
 
 
 
