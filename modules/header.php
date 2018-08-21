@@ -34,11 +34,11 @@
                         <div class="unskewed">FAQ</div>
                     </div>
                 </a>
-                <!-- <a href="../testom" class="menuLink">
+                <a href="../testom.php" class="menuLink">
                     <div class="menuLink__div">
                         <div class="unskewed">Отзывы</div>
                     </div>
-                </a> -->
+                </a>
                 <a href="../contacts.php" class="menuLink">
                     <div class="menuLink__div">
                         <div class="unskewed">Контакты</div>

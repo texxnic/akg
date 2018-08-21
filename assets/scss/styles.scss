@@ -1070,7 +1070,7 @@ hr {
     }
 }
 
-.contactForm {
+.contactForm, .testomForm{
     margin-top: 2em;
     p {
         margin: 0.7em 0;
@@ -1837,6 +1837,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
 }
 .testomName{
   margin-top: 1em;
+  color: $grayOnDark !important;
 }
 .testomTextArea{
     width: 100%;
@@ -1851,11 +1852,20 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     font-weight: 700;
     color: #030c52;
     vertical-align: top;
+   
 }
 .testomForm form{
   margin:1em;
+  padding: 3em 4em;
+  background-color: #fff;
+  box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
+  button{
+    background-color: #f0f0fd;
+  }
 }
-
+.testomSended{
+    display: none;
+}
 
 
 
