@@ -37,6 +37,13 @@ $lightAccent: #f0f0fd;
 
 
 
+
+
+
+
+
+
+
 /*colors*/
 
 
@@ -47,6 +54,13 @@ $media-small: "only screen and (max-width : 767px)";
 $media-medium: "only screen and (max-width : 992px)";
 $media-large: "only screen and (max-width : 1200px)";
 $media-hires: "only screen and (min-width : 2000px)";
+
+
+
+
+
+
+
 
 
 
@@ -1070,7 +1084,8 @@ hr {
     }
 }
 
-.contactForm, .testomForm{
+.contactForm,
+.testomForm {
     margin-top: 2em;
     p {
         margin: 0.7em 0;
@@ -1080,7 +1095,8 @@ hr {
     #question {
         height: 20em;
     }
-    input,textarea {
+    input,
+    textarea {
         width: 100%;
         border: none;
         background-color: #f0f0fd;
@@ -1169,6 +1185,13 @@ input[type=checkbox]+label {
 
 
 
+
+
+
+
+
+
+
 /*
   Change the look'n'feel of labels (which are adjacent to radiobuttons).
   Add some margin, padding to label
@@ -1196,6 +1219,13 @@ input[type=radio]+label {
     margin-top: 1.5em;
     border: 1px solid #ebecec;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1297,6 +1327,13 @@ input[type=range]::-ms-track {
 
 
 
+
+
+
+
+
+
+
 /* Special styling for WebKit/Blink */
 
 input[type=range]::-webkit-slider-thumb {
@@ -1336,6 +1373,13 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
+
+
+
+
+
+
+
 /* All the same stuff for Firefox */
 
 input[type=range]::-moz-range-thumb {
@@ -1349,6 +1393,13 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
     background: $gradient;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1749,6 +1800,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 
+
+
+
+
+
+
+
 /*$media-phone: "only screen and (max-width : 350px)";
 $media-small: "only screen and (max-width : 750px)";
 $media-medium: "only screen and (max-width : 992px)";
@@ -1816,14 +1874,24 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     justify-content: center;
 }
 
-.testomsWrap{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+.testomsWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 3em;
+    .calc__ghost {
+        position: absolute;
+        top: -0.7em;
+        right: 15px;
+        z-index: -1;
+        color: #f0f0fd;
+    }
 }
-.testomWrap{
-    padding: 5%;
+
+.testomWrap {
+        padding-bottom: 3em;
+    padding: 5em;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -1834,39 +1902,176 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     flex-grow: 1;
     flex-shrink: 1;
     box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
-}
-.testomName{
-  margin-top: 1em;
-  color: $grayOnDark !important;
-}
-.testomTextArea{
-    width: 100%;
-    border: none;
-    background-color: #f0f0fd;
-    height: 3em;
-    margin-bottom: 1.5em;
-    border-radius: 5px;
-    font-size: 1em;
-    padding: 1rem;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    color: #030c52;
-    vertical-align: top;
-   
-}
-.testomForm form{
-  margin:1em;
-  padding: 3em 4em;
-  background-color: #fff;
-  box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
-  button{
-    background-color: #f0f0fd;
-  }
-}
-.testomSended{
-    display: none;
+
 }
 
+.testomName {
+    margin-top: 1em;
+    color: $grayOnDark !important;
+}
+
+
+
+.testomForm {
+    form {
+        background-color: #fff;
+        box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
+        padding: 0 1em;
+        padding-bottom: 0.1em;
+        button {
+            background-color: $blueAccent;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            -ms-align-items: center;
+            align-items: center;
+            width: calc(100% - 30px);
+            margin-left: 15px !important;
+        }
+        .testomTextArea {
+            width: calc(100% - 30px);
+            border: none;
+            background-color: #f0f0fd;
+            height: 3em;
+            margin-bottom: 1.5em;
+            border-radius: 5px;
+            font-size: 1em;
+            padding: 1rem;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            color: #030c52;
+            vertical-align: top;
+            margin-bottom: 0;
+            transition: 0.3s;
+            background-color: #fff;
+            margin-left: 15px;
+            overflow: hidden;
+            resize: none;
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: $grayOnDark;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.testomInfoRow,
+.testomBut {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.testomForm {
+    .testomShow {
+        & form {
+            padding-bottom: 1em;
+        }
+        .testomInfoRow,
+        .testomBut {
+            max-height: 100em;
+            overflow: hidden;
+            transition: 0.3s;
+            opacity: 1;
+            margin: 1em 0;
+        }
+        .testomBut {
+            height: 3em;
+            margin-top: 2em;
+            border-radius: 10px;
+        }
+        textarea {
+            background-color: #f0f0fd;
+            transition: 0.3s;
+            height: 10em;
+            position: relative;
+            &:before {}
+        }
+    }
+}
+
+.testomh5 {
+    position: relative;
+    z-index: 2;
+    &:before,
+    &:after {
+        position: absolute;
+        font-size: 15rem;
+        font-weight: 1000;
+        color: #f0f0fd;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    &:before {
+        top: -5rem;
+        left: -4rem;
+        content: "“";
+    }
+    &:after {
+        top: -2rem;
+        right: -4rem;
+        content: "”";
+    }
+}
+
+.testomForm {
+    form.formSended.testomShow {
+        & form {
+            padding-bottom: 0;
+        }
+        .testomInfoRow,
+        .testomBut {
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+            opacity: 0;
+            margin: 0;
+        }
+        .testomBut {
+            height: 0;
+            margin-top: 0;
+            border-radius: 0;
+        }
+        textarea {
+            background-color: white !important;
+            transition: 0.3s;
+            padding: 1.5em 1em;
+        }
+    }
+}
+
+
+.testomWrap:nth-child(4n+3) {
+    background-color: #f0f0fd;
+    h5{
+        &:before,
+    &:after {
+        
+        color: $white;
+        
+    }
+    }
+}
+
+
+
+.testomWrap:nth-child(4n+1) {
+    background-color: $white;
+    h5{
+        &:before,
+    &:after {
+        
+        color: #f0f0fd;
+        
+    }
+    }
+}
 
 
 

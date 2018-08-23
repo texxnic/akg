@@ -13,9 +13,8 @@
         <div class="pageJumbo">
             <div class="container-lessfluid">
                 <div class="col-md-6 jumboContent">
-                    <h2>Цены</h2>
-                    <h5 class="pageJumbo__description paddedText">Стоимость обслуживания в «Амальгама консалтинг-групп» для каждого клиента рассчитываются индивидуально, и зависит от множества факторов. Примерную стоимость обслуживания вы можете рассчитать ниже, воспользовавшись "Калькулятором примерной стоимости".
-                    </h5>
+                    <h2>Отзывы</h2>
+                    <h5 class="pageJumbo__description paddedText"></h5>
                 </div>
             </div>
         </div>
