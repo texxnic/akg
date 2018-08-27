@@ -25,10 +25,10 @@
                         <div id="scrollElementAbsolutePos" class="scrollElementAbsolutePos">
                             <div class="scrollElement">
                                 <img src="assets/img/docs.png" class="unskewedImage_inactive" id="ServiceScroll1" alt="">
-                                <img src="assets/img/calc.png" class="unskewedImage_inactive" id="ServiceScroll2" alt="">
-                                <img src="assets/img/bag.png" class="unskewedImage_inactive" id="ServiceScroll3" alt="">
+                                <img src="assets/img/bag.png" class="unskewedImage_inactive" id="ServiceScroll2" alt="">
+                                <img src="assets/img/calc.png" class="unskewedImage_inactive" id="ServiceScroll3" alt="">
                                 <img src="assets/img/zero.png" class="unskewedImage_inactive" id="ServiceScroll4" alt="">
-                                <img src="assets/img/bag.png" class="unskewedImage_inactive" id="ServiceScroll5" alt="">
+                                <img src="assets/img/empCons.png" class="unskewedImage_inactive" id="ServiceScroll5" alt="">
                                 <img src="assets/img/1c.png" class="unskewedImage_inactive" id="ServiceScroll6" alt="">
                             </div>
                         </div>
@@ -48,9 +48,9 @@
                                 <h5 class="service__desc paddedText">Услуги АКГ «Амальгама консалтинг-групп» по ведению бухгалтерского учета ООО на ОСНО направлены на точную и слаженную работу специалистов высшей категории. Поэтому каждый клиент получает не только ежеквартально составление и сдачу отчетности в ИФНС, но и кадровый учет, расчет налогов и заработной платы, составление приказов/договоров и др. Полный спектр услуг для ООО на ОСНО – это простое решение даже самых сложных проблем!</h5>
                             </div>
                             <div id="accNum" class="bigDigits">
-                                <span class="bigDigits__ghost">350 </span>
+                                <span class="bigDigits__ghost bigDigits__ghost_acc">350 </span>
                                 <h5 class="bigDigits__desc">Документов <br> прошло через <br> AKG</h5>
-                                <span class="bigDigits__ghost"> 000+</span>
+                                <span class="bigDigits__ghost bigDigits__ghost_acc"> 000+</span>
                             </div>
                             <div id="acc4" class="service__block_1 service__block_1_right">
                                 <h3>Нулевая отчетность</h3>

@@ -4,44 +4,44 @@
     <div class="header__menu">
         <div class="header__topMenu">
             <div class="header__languageSelector">
-                <a href=""  class="selectedText">RU</a>
-                <a href="aboutEN.php">EN</a>
+                <a href="../"  >RU</a>
+                <a class="selectedText" href="">EN</a>
             </div>
-            <a href="../contacts.php">
+            <a href="#engForm">
                 <button class="leaveReply leaveReply__opacity">
-                    Оставить заявку
+                    Leave reply
                 </button></a>
                 <a class="header__phone phoneBig" href="tel:88002344444">8 800 234-44-44</a>
             </div>
             <div class="header__botMenu">
                 <a href="/" class="menuLink selected">
                     <div class="menuLink__div">
-                        <div class="unskewed">Услуги</div>
+                        <div class="unskewed">Services<sup class="selectedText">RU</sup></div>
                     </div>
                 </a>
                 <a href="/about.php" class="menuLink">
                     <div class="menuLink__div">
-                        <div class="unskewed">О нас</div>
+                        <div class="unskewed">About<sup class="selectedText">RU</sup></div>
                     </div>
                 </a>
                 <a href="../prices.php" class="menuLink">
                     <div class="menuLink__div">
-                        <div class="unskewed">Цены</div>
+                        <div class="unskewed">Prices<sup class="selectedText">RU</sup></div>
                     </div>
                 </a>
                 <a href="../faq.php" class="menuLink">
                     <div class="menuLink__div">
-                        <div class="unskewed">FAQ</div>
+                        <div class="unskewed">FAQ<sup class="selectedText">RU</sup></div>
                     </div>
                 </a>
                 <a href="../testom.php" class="menuLink">
                     <div class="menuLink__div">
-                        <div class="unskewed">Отзывы</div>
+                        <div class="unskewed">Testimonials<sup class="selectedText">RU</sup></div>
                     </div>
                 </a>
-                <a href="../contacts.php" class="menuLink">
+                <a href="#engForm" class="menuLink">
                     <div class="menuLink__div">
-                        <div class="unskewed">Контакты</div>
+                        <div class="unskewed">Contacts</div>
                     </div>
                 </a>
             </div>

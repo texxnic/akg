@@ -13,7 +13,7 @@
         <div class="pageJumbo">
             <div class="container-lessfluid">
                 <div class="col-md-6 jumboContent">
-                    <h2>Юридические услуги</h2>
+                    <h2>Зарплаты и кадры</h2>
                     <h5 class="pageJumbo__description paddedText">Успех всего бизнеса во многом зависит от той команды, которая трудится в компании ежедневно. Мы поможем сформировать квалифицированный и опытный персонал в компании на любом этапе ее развития.
 </h5>
                 </div>
@@ -48,9 +48,9 @@
                                 <h5 class="service__desc paddedText">Сильная команда для построения прибыльного и устойчивого бизнеса считается главной составляющей. АКГ «Амальгама консалтинг-групп» поможет Вам собрать команду профессионалов, которая будет состоять исключительно из опытных и высококвалифицированных экспертов. Мы работаем с самыми разными направлениями: бухгалтерия, финансы, аудит, юриспруденция, инвестиции, маркетинг и др. Руководители высшего звена, специалисты и менеджеры среднего звена, расчет заработных плат. Все эти задачи легко поможет решить АКГ «Амальгама консалтинг-групп».</h5>
                             </div>
                             <div id="accNum" class="bigDigits">
-                                <span class="bigDigits__ghost">2</span>
-                                <h5 class="bigDigits__desc">Законченных <br>проектов<br> AKG</h5>
-                                <span class="bigDigits__ghost">300+</span>
+                                <span class="bigDigits__ghost bigDigits__ghost_emp">5</span>
+                                <h5 class="bigDigits__desc">Сотрудников<br>найдены<br> AKG</h5>
+                                <span class="bigDigits__ghost bigDigits__ghost_emp">00+</span>
                             </div>
                             <div id="emp4" class="service__block_1 service__block_1_right">
                                 <h3>HR консалтинг</h3>

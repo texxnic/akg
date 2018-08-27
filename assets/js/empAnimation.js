@@ -4,8 +4,8 @@ $(document).ready(function() {
     // create a scene
     new ScrollMagic.Scene({
             triggerElement: "#emp1",
-            offset: -200,
-            duration: $('#emp1').outerHeight(true),
+            offset: -500,
+            duration: $('#emp1').outerHeight(true) + 300,
         })
         .on("enter", function(event) {
             var position1 = $("#emp1").position().top + $('#emp1').outerHeight(true) - $('#emp1').outerHeight();
@@ -58,8 +58,7 @@ $(document).ready(function() {
         .addIndicators() // pins the element for the the scene's duration
         .addTo(controller);
 
-
-    new ScrollMagic.Scene({
+    var scene4 = new ScrollMagic.Scene({
             triggerElement: "#accNum",
 
             duration: $('#accNum').outerHeight(true),
@@ -67,27 +66,28 @@ $(document).ready(function() {
         .on("enter", function(event) {
             var marginsSize = $('#accNum').outerHeight(true) - $('#accNum').outerHeight();
             var position1 = $("#accNum").position().top + marginsSize / 2;
+            var position2 = $("#accNum").position().left;
             console.log(position1);
             $(".scrollElementWrap").css({
                 'top': position1,
 
+
             });
             console.log('yeah')
         })
-        .setClassToggle("#scrollElementAbsolutePos,#ServiceScroll4,#accNum", "activeNum")
-        .addIndicators() // pins the element for the the scene's duration
+        .setClassToggle("#scrollElementAbsolutePos,#ServiceScroll4,#accNum", "activeNumEmp")
+        // pins the element for the the scene's duration
         .addTo(controller);
 
-    new ScrollMagic.Scene({
+    var scene5 = new ScrollMagic.Scene({
             duration: $(window).height(),
             triggerElement: "#accNum",
             triggerHook: "onEnter",
 
         })
-        .setTween("#accNum", { left: "-15%" })
-        .addIndicators()
-        .addTo(controller);
+        .setTween("#accNum", { left: "-5%" })
 
+        .addTo(controller);
 
 
     new ScrollMagic.Scene({

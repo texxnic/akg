@@ -26,7 +26,7 @@
                             <div class="scrollElement">
                                 <img src="assets/img/lawReg.png" class="unskewedImage_inactive" id="ServiceScroll1" alt="">
                                 <img src="assets/img/lawCons.png" class="unskewedImage_inactive" id="ServiceScroll2" alt="">
-                                <img src="assets/img/bag.png" class="unskewedImage_inactive" id="ServiceScroll3" alt="">
+                                <img src="assets/img/lawChange.png" class="unskewedImage_inactive" id="ServiceScroll3" alt="">
                                 <img src="assets/img/lawCan.png" class="unskewedImage_inactive" id="ServiceScroll4" alt="">
                                 <img src="assets/img/lawLux.png" class="unskewedImage_inactive" id="ServiceScroll5" alt="">
                                 <img src="assets/img/lawLetter.png" class="unskewedImage_inactive" id="ServiceScroll6" alt="">
@@ -49,9 +49,9 @@
                                 <h5 class="service__desc paddedText">Мы предоставляем помощь уже действующим и начинающим компаниям в оформлении и переоформлении документов любой сложности. Эксперты высшей категории в короткие сроки помогут внести изменения в ЕГРЮЛ и ЕГРИП: смена директора и участников, адреса,  изменения видов экономической деятельности и др. АКГ «Амальгама консалтинг-групп» оперативно и качественно проводит регистрацию изменений юридических лиц.</h5>
                             </div>
                             <div id="accNum" class="bigDigits">
-                                <span class="bigDigits__ghost">2</span>
+                                <span class="bigDigits__ghost bigDigits__ghost_law">2</span>
                                 <h5 class="bigDigits__desc">Законченных <br>проектов<br> AKG</h5>
-                                <span class="bigDigits__ghost">300+</span>
+                                <span class="bigDigits__ghost bigDigits__ghost_law">300+</span>
                             </div>
                             <div id="law4" class="service__block_1 service__block_1_right">
                                 <h3>Ликвидация</h3>

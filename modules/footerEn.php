@@ -55,20 +55,19 @@
                                 <img src="assets/img/logoW.svg" class="img-fluid" alt="">
                             </div> -->
                             <div class="col-md-12">
-                                <p class="footer__companyName">© 2004 - 2018 ООО АКГ «Амальгама консалтинг-групп». Все права защищены.</p>
+                                <p class="footer__companyName">© 2004 - 2018 ООО АКГ <br>  Все права защищены.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                       <!--  <a href="../contacts.php">
+                        <a href="../contacts.php">
                         <button class="leaveReply leaveReply__border">
                             Оставить заявку
                         </button>
-                        </a> -->
+                        </a>
                     </div>
                     <div class="col-md-3">
                         <a class="footer__phone phoneBig" href="tel:88002344444">8 800 234-44-44</a>
-                        <p class="footer__companyName">Звонок бесплатный</p>
                     </div>
                 </div>
             </div>
