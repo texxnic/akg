@@ -1,93 +1,103 @@
-<div class="aboutContent aboutContact contentPaddings">
-    <div class="container-lessfluid">
-        <h2>Контакты</h2>
-        <div class="container-lessfluid contentPaddings row">
-            <div class="col-md-7 cardPaddings cardLightShadow contactCard">
-                <div class="contactFormInfo">
-                    <h3 class="contactFormInfo__h3">Есть вопросы?</h3>
-                <p class="contactFormInfo__p">Воспользуйтесь формой снизу для вопроса или заявки</p>
-                </div>
-                <div class="contactForm">
-                    <form class="contactForm" action="../contactform.php" method="get" name="contactform">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Имя</p>
-                                <input type="text" id="fname" name="firstname">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Фамилия</p>
-                                <input type="text" id="sname" name="secondname">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Компания</p>
-                                <input type="text" id="company" name="company">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Телефон</p>
-                                <input type="tel" id="phone" name="phone" data-mask="00/00/0000" data-mask-selectonfocus="true">
-                            </div>
-                            <div class="col-md-6">
-                                <p>E-mail</p>
-                                <input type="email" id="email" name="email" required >
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Вопрос или комментарий</p>
-
-                                <textarea rows="14" cols="10" wrap="soft" id="question" name="question" style="overflow:hidden; resize:none;"> </textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <button class="contactCard__submit" type="submit">Отправить</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<div class="aboutContent aboutSectionContacts aboutSection_white contentPaddings">
+    <div class="container-lessfluid aboutSection">
+        <div class="about_column1 about_column">
+            <div class="col1warp">
+                <h4>Контактная форма</h4>
+                <span class="divider">-</span>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4 contactsAddres">
-                <img src="../assets/img/mapDotted.svg" class="mapDotted" alt="">
-                <h3>Адрес</h3>
+        </div>
+        <div class="about_column2 about_column2__withText about_column">
+            <div class="contactForm">
+                <div class="contactForm_header">
+                    <h3>Остались вопросы?</h3>
+                    <p>Воспользуйтесь формой снизу для вопроса или заявки</p>
+                </div>
+                <form action="" class="contactForm">
+                    <div class="row inputRow">
+                        <div class="col-md-8">
+                            <div class="inputWrap">
+                                <i class="fal fa-user-alt"></i>
+                                <input class="input" placeholder="Ф.И.О.*" name="firstname" type="text" required minlength="2">
+                                <span class="underline"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="inputWrap">
+                                <i class="fal fa-at"></i>
+                                <input class="input" placeholder="E-mail*" name="email" type="email" required>
+                                <span class="underline"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row inputRow">
+                        <div class="col-md-4">
+                            <div class="inputWrap">
+                                <i class="fal fa-mobile-android-alt"></i>
+                                <input class="input" id="phoneInput" placeholder="+7" name="tel" type="text">
+                                <span class="underline"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="inputWrap">
+                                <i class="fal fa-building"></i>
+                                <input class="input" placeholder="Комания" name="company" type="text">
+                                <span class="underline"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row inputRow">
+                        <div class="col-md-12">
+                            <textarea rows="1" wrap="soft" placeholder="Ваш вопрос" class="inputTextarea" name="question" style="overflow:hidden; resize:none;"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6Ldz43UUAAAAABbhldxwKuXYxwGuMAsIMYoFPxjo"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contactCard__submit" disabled type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+        function enableBtn() {
+            console.log($(".contactCard__submit"));
+            $(".contactCard__submit").removeAttr("disabled");
+            console.log('disabled');
+        }
+
+        $('#phoneInput').mask('+7 000 000-00-00');
+        $(".contactForm").one('submit', function(event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            TweenLite.to($(".contactForm"), 0.3, { opacity: 0.5 });
+            $.post("../contactform.php", $(".contactForm").serialize())
+                .done(function() {
+                    $(".contactForm,.contactFormInfo__p").hide();
+                    $(".contactFormInfo__h3").text("Спасибо, ваша заявка отправлена");
+                    // $( ".contactFormInfo__p" ).text("Спасибо, ваша заявка отправлена");
+                })
+                .fail(function() {
+                    alert("Что-то пошло не так, попробуйте еще раз");
+                    TweenLite.to($(".contactForm"), 0.3, { opacity: 1 });
+                });
+
+        });
+        </script>
+        <div class="about_column3">
+            <div class="contactinfo">
+                <h4>Адрес</h4>
                 <p>ул. Земляной Вал, д. 9 Москва, 105064</p>
-                <h3>Реквизиты</h3>
+                <h4>Реквизиты</h4>
                 <p>ОГРН 1177746408069
                     <br> ИНН 9701072627
-
-
                     <br>
                 </p>
-                <h3>Телефон</h3>
+                <h4>Телефон</h4>
                 <a class="footer__phone phoneBig" href="tel:88002344444">8 800 234-44-44</a>
-
             </div>
         </div>
     </div>
 </div>
-<script src="../assets/js/jquery.mask.min.js"></script>
-<script>
-
-    $('#phone').mask('+7 000 000-00-00');
-    $( ".contactForm" ).one('submit',function( event ) {
-        event.preventDefault();
-        event.stopImmediatePropagation();
-        TweenLite.to($( ".contactForm" ), 0.3, { opacity: 0.5});
-        $.post( "../contactform.php", $( ".contactForm" ).serialize() )
-        .done(function() {
-            $( ".contactForm,.contactFormInfo__p" ).hide();
-            $( ".contactFormInfo__h3" ).text("Спасибо, ваша заявка отправлена");
-            // $( ".contactFormInfo__p" ).text("Спасибо, ваша заявка отправлена");
-        })
-        .fail(function() {
-            alert( "Что-то пошло не так, попробуйте еще раз" );
-            TweenLite.to($( ".contactForm" ), 0.3, { opacity: 1});
-        });
-
-    });
-
-</script>

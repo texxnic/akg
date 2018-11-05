@@ -7,26 +7,35 @@
     <?php include_once 'modules/head.php';?>
 </head>
 
-<body>
+<body class="faqSelector">
     <div class="header  pageHeader">
         <?php include_once 'modules/header.php';?>
     </div>
     <div class="pageContent">
         <div class="pageJumbo">
-            <div class="container-lessfluid">
-                <div class="col-md-6 jumboContent">
-                    <h2>Часто задаваемые вопросы</h2>
+            <div class="container-lessfluid aboutSection pageJumbo_aboutSection">
+                <div class="about_column1 about_column">
+                    <div class="col1warp">
+                        <h4>FAQ</h4>
+                        <span class="divider">-</span>
+                    </div>
+                </div>
+                <div class="about_column2 about_column2__withText about_column">
+                    <h3>Здесь вы можете посмотреть ответы на частозадаваемые вопросы (FAQ).</h3>
+                    <p class="aboutFirstP">Если вы не нашли ответ на свой вопрос, воспользуйтесь формой внизу</p>
                 </div>
             </div>
         </div>
         <div class="pageDescription">
-            <div class="container-lessfluid">
-                <div class="contentPaddings">
-                     
-                    <div class="row">
-                        <div class="col-md-8 questionWrap">
-                            <h1 class="calc__ghost">Бухгалтерские услуги</h1>
-                            <div class="question">
+            <div class="container-lessfluid aboutSection_white aboutSection">
+                <div class="about_column1 about_column">
+                    <div class="col1warp">
+                        <h4>Юридические услуги</h4>
+                        <span class="divider">-</span>
+                    </div>
+                </div>
+                <div class="about_column2 about_column2__withText about_column">
+                   <div class="question">
                                 <div class="question__cap">
                                     <h4>Сколько стоят ваши услуги?</h4>
                                 </div>
@@ -68,8 +77,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <h1 class="calc__ghost">Юридические услуги</h1>
-                            <div class="question">
+                </div>
+
+            </div>
+            <div class="container-lessfluid aboutSection_white aboutSection">
+                <div class="about_column1 about_column">
+                    <div class="col1warp">
+                        <h4>Бухгалтерские услуги</h4>
+                        <span class="divider">-</span>
+                    </div>
+                </div>
+                <div class="about_column2 about_column2__withText about_column">
+                   <div class="question">
                                 <div class="question__cap">
                                     <h4>Предоставляет ли компания бесплатные юридические консультации?</h4>
                                 </div>
@@ -100,9 +119,18 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <h1 class="calc__ghost">Зарплаты и кадры</h1>
-                            <div class="question">
+                </div>
+
+            </div>
+            <div class="container-lessfluid aboutSection_white aboutSection">
+                <div class="about_column1 about_column">
+                    <div class="col1warp">
+                        <h4>Зарплаты и кадры</h4>
+                        <span class="divider">-</span>
+                    </div>
+                </div>
+                <div class="about_column2 about_column2__withText about_column">
+                   <div class="question">
                                 <div class="question__cap">
                                     <h4>Каких принципов работы придерживается компания?</h4>
                                 </div>
@@ -146,28 +174,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                            
-                        </div>
-                        <div class="col-md-4 videoDiv__wrap">
-                                <div class="videoPadWrap">
-                                    <div class="videoDiv__hoverOver"></div>
-                                    <div class="videoDiv__textWrap">
-                                        <h2 class="videoDiv__text">Юридические услуги</h2>
-                                        <p>Качественных юридические услуги, налоговая поддержка и правовая защита</p>
-                                    </div>
-                                    <img src="assets/img/femida.png" alt="" class="videoDiv__femida">
-                                    <div class="videoDiv">
-                                        <video id="vid" video autobuffer autoplay muted loop>
-                                            <source id="mp4" src="assets/video/stars.mp4" type="video/mp4">
-                                            </video>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
-                    
                 </div>
 
             </div>

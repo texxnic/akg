@@ -7,7 +7,7 @@
     <?php include_once 'modules/head.php';?>
 </head>
 
-<body>
+<body class="testomSelector">
     <?php include_once 'modules/header.php';?>
     <div class="pageContent pricesSec">
         <div class="pageJumbo">
@@ -19,7 +19,11 @@
             </div>
         </div>
         <div class="pageDescription">
-            <div id="root"></div>
+            <div id="root">
+                <div class="preloader">
+                    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="pageFooter footer">

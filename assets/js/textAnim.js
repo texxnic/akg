@@ -24,7 +24,7 @@ acAnimated.Plugins.SplitText = function(element, options) {
 		node.appendChild(nodeText);
 		node.style.display = "inline-block";
 		node.style.position = "relative";
-		if (text.trim() == "") node.style.width = String(options.spacing) + "px";
+		if (text.trim() == "") node.style.width = String(options.spacing) + "rem";
 		relatedNode.parentNode.insertBefore(node, relatedNode);
 		return node;
 	}

@@ -1,0 +1,86 @@
+
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #282828;
+  color: #555;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0.3rem;
+  
+  
+  
+  position: relative;
+  
+  width: 100%;
+}
+.contactForm{
+  margin-top: 2rem;
+}
+.input:focus {
+  outline: none;
+}
+.inputWrap{
+  position: relative;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.inputTextarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #282828;
+    font-size: 1rem;
+  padding: 0.3rem;
+  background-color: transparent;
+}
+.inputTextarea::-webkit-input-placeholder {
+  color: #AAA;
+}
+.inputWrap i{
+      margin-right: 0.5rem;
+      color: #AAA;
+    }
+.inputRow{
+  margin-bottom: 2rem;
+  }
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #78B64B;
+}
+
+.input:focus + .underline {
+  transform: scale(1);
+}
+.contactCard__submit:disabled{
+  opacity: 0.3;
+  color: gray;
+
+}
+.contactCard__submit:disabled:hover{
+   transform: none;
+   border: none;
+   color: gray;
+   cursor: auto;
+
+}
+.underline {
+  background-color: #78B64B;
+    display: inline-block;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 100%;
+}

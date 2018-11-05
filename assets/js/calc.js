@@ -1,16 +1,35 @@
+
 $(document).on('ready', function() {
     $('[name="tax_system"], .percent, #slider1-value, #slider2-value, .percent_inc, .quantity-field, .input-num>input').change(function() {
-        calc()
-        console.log('exec');
+        calc();
+
     });
 
-    $("#slider1, #slider2, .white-block").mouseup(function() {
-        calc()
+
+    $(document).on('input', '#slider1-value', function() {
+        var target  = $('.slider-val_2')
+        target.addClass('darkText'); 
+        target.html($('#slider1-value').val());
     });
 
-    $("#slider1, #slider2").mouseout(function() {
-        calc()
+    // инкремент декремент Дополнительная информация
+
+
+    $('.triangleButton_increment').click(function () {
+        var quantyTarget = $(this).siblings(".quantyNumber").children(".odometr");
+        quantyTarget.html(parseInt(quantyTarget.text()) + 1);
+        calc();
     });
+    
+    $('.triangleButton_decrement').click(function () {
+        var quantyTarget = $(this).siblings(".quantyNumber").children(".odometr");
+        if(parseInt(quantyTarget.text()) > 0){
+            quantyTarget.html(parseInt(quantyTarget.text()) - 1);
+            calc();
+        };
+    });
+
+
 
     function calc() {
 
@@ -40,9 +59,9 @@ $(document).on('ready', function() {
 
         })
 
-        $('.percent_inc').each(function(i, elem) {
-            if ($(elem).children(".quantity-field").val() > 0) {
-                x += (base * (5 / 100)) * parseFloat($(elem).children(".quantity-field").val());
+        $('.quantyNumber').each(function(i, elem) {
+            if ($(elem).children(".odometr").text() > 0) {
+                x += (base * (5 / 100)) * parseFloat($(elem).children(".odometr").text());
                 console.log(1);
 
             }
@@ -68,6 +87,7 @@ $(document).on('ready', function() {
         }
 
         $('.CalcSum').text(Math.ceil(x + base));
+        $('.second-calc-odo').text(Math.ceil(x + base)*0.20);
     }
 
 
@@ -106,13 +126,23 @@ $(document).on('ready', function() {
         decrementValue(e);
         calc();
     });
+    var controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+        duration: $(window).height()/2,
+            
+
+        })
+        
+        .setTween(".pageJumbo__ghost", { right: "5%" })
+        
+        .addTo(controller);
 
 
-    
+
 
 });
 window.odometerOptions = {
-        format: '( ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-        duration: 300, // Change how long the javascript expects the CSS animation to take
+    format: '( ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
+    duration: 300, // Change how long the javascript expects the CSS animation to take
 
-    };
+};

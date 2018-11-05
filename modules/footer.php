@@ -66,7 +66,7 @@
                         </button>
                         </a> -->
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 footerPhoneWrap">
                         <a class="footer__phone phoneBig" href="tel:88002344444">8 800 234-44-44</a>
                         <p class="footer__companyName">Звонок бесплатный</p>
                     </div>
