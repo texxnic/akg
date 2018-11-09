@@ -15,7 +15,7 @@
 
     <div id="fullpage">
         <div class="section fp-noscroll" id="section0">
-            <!-- <img data-src="assets/img/bg1.png"> -->
+            
             <video id="myVideo" class="objectRight" autoplay playsinline muted data-autoplay>
                 <source src="assets/video/sec1A.mp4" type="video/mp4">
             </video>

@@ -11,6 +11,6 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" type="text/css" href="assets/css/bundle.css?ver=13">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="../assets/js/jquery.mask.min.js"></script>

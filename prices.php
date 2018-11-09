@@ -75,7 +75,7 @@
                                         <div class="taxSelector">
                                             <div class="quanty_item borderedButton">
                                                 <div class="form-title-button form-title-button__quanty">
-                                                    <p>Филиалов</p>
+                                                    <span>Филиалов</span>
                                                 </div>
                                                 <div class="quantyNumber">
                                                     <span class="quantyNumber__branches odometr">0<span>
@@ -87,7 +87,7 @@
                               </div>
                               <div class="quanty_item borderedButton">
                                  <div class="form-title-button form-title-button__quanty">
-                                    <p>Валютные счета</p>
+                                    <span>Валютные счета</span>
                                  </div>
                                   <div class="quantyNumber">
                                   <span class="quantyNumber__curAcc odometr">0<span>
@@ -99,7 +99,7 @@
                               </div>
                               <div class="quanty_item borderedButton">
                                  <div class="form-title-button form-title-button__quanty">
-                                    <p>ККМ</p>
+                                    <span>ККМ</span>
                                  </div>
                                   <div class="quantyNumber">
                                   <span class="quantyNumber__KKM odometr">0<span>

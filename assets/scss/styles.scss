@@ -2,7 +2,7 @@
 
 $secColor: #78B64B;
 $mainColor: #78B64B;
-$bgColor: #282828;
+$bgColor: #1e1e1e;
 $bgGrad: linear-gradient(to bottom, #1c1b1d 0%, #151726 100%);
 
 $blueAccent: #C6EBAC;
@@ -65,6 +65,7 @@ a.noUnderline {
 p {
     margin: 0;
     max-width: 60rem;
+    font-size: 1rem;
 }
 
 h1 {
@@ -110,7 +111,6 @@ h5 {
 .form-title {
     font-family: 'Roboto Condensed', serif;
     font-weight: 900;
-    font-size: 1rem;
     color: $grayOnWhite;
 }
 .ghostTextAnimated_span,.ghostTextAnimated_span2{
@@ -145,6 +145,28 @@ button:active {
 }
 
 #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    background-attachment: fixed;
+    z-index: 3;
+}
+#section0{
+    background: url(/assets/img/aboutCont.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bgPreloaderImg{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -320,9 +342,16 @@ button:active {
     right: 0;
     
 }
-
+.aboutService{
+     background: url(/assets/img/splashBG.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .aboutService__first {
     overflow: hidden;
+
 
 }
 
@@ -507,7 +536,7 @@ button:active {
     text-decoration: none;
 
     a {
-        margin-right: 0.4em;
+        margin-right: 0.4rem;
         transition: 0.3s;
         text-decoration: none;
     }
@@ -677,7 +706,7 @@ button:active {
 button,
 .leaveReply {
     border: none;
-    padding: 0.7em 1.5rem;
+    padding: 0.7rem 1.5rem;
     font-size: 1rem;
     font-family: 'Montserrat', serif;
     font-weight: 700;
@@ -767,7 +796,7 @@ button:hover {
 
 .phoneBig {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     transition: 0.3s;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -826,7 +855,7 @@ video::-webkit-media-controls {
     background-color: $bgColor;
     color: white;
     text-align: left;
-    padding: 3em 0;
+    padding: 3rem 0;
     position: relative;
     z-index: 2;
 
@@ -875,7 +904,7 @@ video::-webkit-media-controls {
 .footer__linksWrap {
     display: flex;
     flex-direction: column;
-    margin: 1.3em 0;
+    margin: 1.3rem 0;
 }
 
 hr {
@@ -912,7 +941,7 @@ hr {
 
 
 .contentPaddings {
-    padding: 5em 0;
+    padding: 5rem 0;
 }
 
 .paddedText {
@@ -921,7 +950,7 @@ hr {
 }
 
 .pageContent__containerPaddings {
-    padding: 3em 0;
+    padding: 3rem 0;
 }
 
 .contenеIntro {
@@ -1082,7 +1111,7 @@ hr {
     padding-right: 3rem;
 
     hr {
-        margin: 2em 0;
+        margin: 2rem 0;
     }
 }
 
@@ -1210,7 +1239,7 @@ hr {
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 15em 0;
+    padding: 15rem 0;
 }
 
 
@@ -1290,7 +1319,7 @@ hr {
     z-index: 4;
     height: 90%;
     bottom: 0;
-    right: -7em;
+    right: -7rem;
     transition: 1s;
 }
 
@@ -1308,7 +1337,7 @@ hr {
     .videoDiv__femida {
         height: 90%;
         bottom: 0;
-        right: -8em;
+        right: -8rem;
         transition: 1s;
     }
 
@@ -1321,15 +1350,15 @@ hr {
 
 .videoDiv__textWrap {
     position: absolute;
-    bottom: 2.5em;
+    bottom: 2.5rem;
 
-    left: 2em;
+    left: 2rem;
     z-index: 5;
-    padding-right: 1.5em;
+    padding-right: 1.5rem;
 
     p {
-        font-size: 1.2em;
-        margin-top: 1em;
+        font-size: 1.2rem;
+        margin-top: 1rem;
         width: 70%;
     }
 }
@@ -1339,7 +1368,7 @@ hr {
 
 
     p {
-        margin: 0.5em 0;
+        margin: 0.5rem 0;
         font-weight: 300;
         color: #222;
     }
@@ -1351,7 +1380,7 @@ hr {
 
     button {
         width: 100%;
-        padding: 1em 0;
+        padding: 1rem 0;
     }
 }
 
@@ -1635,7 +1664,7 @@ input[type="range"] {
 .calc__ghost {
 
     margin-top: 2rem;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
     color: $blueAccent;
 }
 
@@ -1657,7 +1686,7 @@ input[type="range"] {
 
 .calculator-section {
     background-color: #fff;
-    padding: 2em 4rem;
+    padding: 2rem 4rem;
 
     .form-title {
         color: $grayOnDark;
@@ -1823,7 +1852,7 @@ input[type="range"] {
 
 .question__cap {
 
-    padding: 1em 2rem;
+    padding: 1rem 2rem;
     border-bottom: 1px solid $lightAccent;
     cursor: pointer;
 }
@@ -1836,13 +1865,13 @@ input[type="range"] {
     background-color: $white;
 
     .question__bodyWrap {
-        margin: 2.5em 2rem;
+        margin: 2.5rem 2rem;
     }
 }
 
 
 .cardPaddings {
-    padding: 3em 4rem;
+    padding: 3rem 4rem;
 }
 
 .cardLightShadow {
@@ -1859,6 +1888,7 @@ input[type="range"] {
     height: 100%;
     padding: 2rem;
     position: relative;
+    background-size: cover;
 
     h5 {
         margin-top: 0;
@@ -1893,9 +1923,7 @@ ul {
 
 .priceCard_row__underList {
     margin: 0;
-    /*position: absolute;
-    width: calc(100% - 4rem);
-    bottom: 1rem;*/
+    
 }
 
 .aboutFirstCard {
@@ -1909,7 +1937,7 @@ ul {
         content: "&";
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
-        font-size: 25em;
+        font-size: 25rem;
         top: -40px;
         left: 10px;
         color: $white;
@@ -1918,7 +1946,7 @@ ul {
     }
 
     .aboutFirstCard__p {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         position: relative;
         z-index: 3;
         color: $blueAccent;
@@ -1953,9 +1981,9 @@ ul {
 
     .advantagesCard {
         display: inline-block;
-        height: 13em;
-        width: 18em;
-        margin-right: 2em;
+        height: 13rem;
+        width: 18rem;
+        margin-right: 2rem;
         background-color: rgba(3, 12, 82, 0.6);
         position: relative;
         overflow: hidden;
@@ -1967,12 +1995,12 @@ ul {
     }
 
     .advantagesCard__text {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         width: 60%;
         white-space: pre-wrap;
         position: absolute;
         bottom: 0;
-        right: 1.15em;
+        right: 1.15rem;
         text-align: right;
         z-index: 3;
     }
@@ -1982,7 +2010,7 @@ ul {
         z-index: 2;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
-        font-size: 25em;
+        font-size: 25rem;
         bottom: -10%;
         right: -10%;
         color: #fb3636;
@@ -1993,7 +2021,7 @@ ul {
 }
 
 .cardsPaddings {
-    padding-top: 3em;
+    padding-top: 3rem;
 }
 
 .contactCard {
@@ -2022,7 +2050,7 @@ ul {
 }
 
 .aboutAdv__text {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .contactsAddres {
@@ -2031,7 +2059,7 @@ ul {
 
     .mapDotted {
         position: absolute;
-        height: 30em;
+        height: 30rem;
         z-index: 1;
         top: -5%;
         left: -20%;
@@ -2046,7 +2074,7 @@ ul {
 }
 
 .footerPhoneWrap {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .percent_inc {
@@ -2061,11 +2089,11 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    padding-bottom: 3em;
+    padding-bottom: 3rem;
 
     .calc__ghost {
         position: absolute;
-        top: -0.7em;
+        top: -0.7rem;
         right: 15px;
         z-index: -1;
         color: $white;
@@ -2073,15 +2101,15 @@ ul {
 }
 
 .testomWrap {
-    padding-bottom: 3em;
-    padding: 5em;
+    padding-bottom: 3rem;
+    padding: 5rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     align-items: center;
-    margin: 1em;
+    margin: 1rem;
     flex-grow: 1;
     flex-shrink: 1;
     box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
@@ -2090,7 +2118,7 @@ ul {
 }
 
 .testomName {
-    margin-top: 1em;
+    margin-top: 1rem;
     color: $grayOnDark !important;
 }
 
@@ -2100,9 +2128,9 @@ ul {
     form {
         background-color: #fff;
         box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
-        padding: 0 1em;
-        padding-bottom: 0.1em;
-        margin: 1em;
+        padding: 0 1rem;
+        padding-bottom: 0.1rem;
+        margin: 1rem;
         max-width: 80rem;
 
         button {
@@ -2123,10 +2151,10 @@ ul {
             width: calc(100% - 30px);
             border: none;
             background-color: $white;
-            height: 3em;
-            margin-bottom: 1.5em;
+            height: 3rem;
+            margin-bottom: 1.5rem;
             border-radius: 5px;
-            font-size: 1em;
+            font-size: 1rem;
             padding: 1rem;
             font-family: 'Roboto Slab', serif;
             font-weight: 700;
@@ -2160,28 +2188,28 @@ ul {
 .testomForm {
     .testomShow {
         & form {
-            padding-bottom: 1em;
+            padding-bottom: 1rem;
         }
 
         .testomInfoRow,
         .testomBut {
-            max-height: 100em;
+            max-height: 100rem;
             overflow: hidden;
             transition: 0.3s;
             opacity: 1;
-            margin: 1em 0;
+            margin: 1rem 0;
         }
 
         .testomBut {
-            height: 3em;
-            margin-top: 2em;
+            height: 3rem;
+            margin-top: 2rem;
             border-radius: 10px;
         }
 
         textarea {
             background-color: $white;
             transition: 0.3s;
-            height: 10em;
+            height: 10rem;
             position: relative;
 
             &:before {}
@@ -2240,7 +2268,7 @@ ul {
         textarea {
             background-color: white !important;
             transition: 0.3s;
-            padding: 1.5em 1em;
+            padding: 1.5rem 1rem;
         }
     }
 }
@@ -2368,7 +2396,7 @@ ul {
 }
 
 .aboutJumbo__h3 {
-    margin: 0 1em;
+    margin: 0 1rem;
     text-align: center;
 }
 
@@ -2389,7 +2417,7 @@ ul {
 
 .objectRight{
     object-position: right;
-    opacity: 0.8;
+    
 }
 .objectLeft{
     object-position: left;
@@ -2403,15 +2431,11 @@ $media-large: "only screen and (max-width : 1200px)";
 $media-hires: "only screen and (min-width : 2000px)";*/
 
 @media #{$media-hires} {
-    body {
-        font-size: 18px;
-    }
+
 }
 
 @media #{$media-large} {
-    body {
-        font-size: 14px;
-    }
+
 
     .layer__textBlock {
         width: 60%;
@@ -2482,11 +2506,11 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     }
 
     .contactsAddres {
-        margin-top: 4em;
+        margin-top: 4rem;
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
 
     .mobileMenuLink {
@@ -2494,20 +2518,19 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     }
 
     .sliderSection {
-        margin-top: 2em;
+        margin-top: 2rem;
     }
 
     .calculator__main {
         border-right: none;
     }
 
-    .pageContent,
-    .footer {
-        font-size: 12px;
+    .borderedButton{
+        font-size: 1rem;
     }
 
     .cardPaddings {
-        padding: 2em 1em;
+        padding: 2rem 1rem;
     }
 
     .pageJumbo {
@@ -2517,7 +2540,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     .calculator-section {
         background-color: $bgColor;
         color: $white;
-        padding: 2em 1em;
+        padding: 2rem 1rem;
     }
 
     .paddedText {
@@ -2529,7 +2552,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     }
 
     .form-title {
-        margin-top: 1em;
+        margin-top: 1rem;
     }
 
     .form-title {}
@@ -2539,11 +2562,11 @@ $media-hires: "only screen and (min-width : 2000px)";*/
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 2em 1em;
+        padding: 2rem 1rem;
         background-color: $lightAccent;
         border-radius: 5px;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .quanty .form-title {
@@ -2554,9 +2577,6 @@ $media-hires: "only screen and (min-width : 2000px)";*/
 @media #{$media-phone} {
 
 
-    body {
-        font-size: 8px;
-    }
 
     .layer__textBlock {
         width: 90%;

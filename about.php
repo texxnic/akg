@@ -71,13 +71,13 @@
                         </div>
                         <div class="about_column3 about_column3_services">
                             <a href="../law.php">
-                                <div class="about_column3_service aboutServiceFirst">
+                                <div class="about_column3_service aboutService aboutServiceFirst">
                                 <h3>Юридические услуги</h3>
                                 <img src="assets/img/hummer.png" alt="" class="secondServiceImg">
                             </div>
                             </a>
                             <a href="../employee.php">
-                                <div class="about_column3_service aboutServiceSecond">
+                                <div class="about_column3_service aboutService aboutServiceSecond">
                                 <h3>Зарплаты и кадры</h3>
                                 <img src="assets/img/instruments.jpg" alt="" class="thirdServiceImg">
                             </div>

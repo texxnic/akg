@@ -1,3 +1,0 @@
-function availableOn (osType,lang,) {
-	
-}
