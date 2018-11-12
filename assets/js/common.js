@@ -33,17 +33,13 @@
 	$(document).ready(function() {
 	    var t2 = performance.now();
 	    var loadDelta = t2 - t1;
-	    if (loadDelta <= 3000) {
-	        setTimeout(function() {
-	            $('.preloader').addClass('preloader__runAnimationNow');
-	        }, 3000 - loadDelta);
-	        setTimeout(function() {
-	            TweenMax.staggerFrom('.menuLink', 0.9, { x: 30, y: -25, opacity: 0 }, 0.15);
-	            $('#fullpage').fullpage({
+	    var fullPageSettings = {
 	                licenseKey: '3862E3AE-77274709-A7823F26-56D63069',
 	                anchors: ['accountant', 'law', 'employee', 'footer'],
 	                scrollOverflow: true,
 	                recordHistory: false,
+	                navigation: true,
+	                navigationTooltips: ['Бухгалтерские услуги', 'Юридические услуги', 'Зарплаты и кадры', 'Меню'],
 	                afterLoad: function(origin, destination) {
 	                    var loadedSection = this;
 	                    animateEl(destination.index);
@@ -52,26 +48,20 @@
 	                },
 
 
-	            });
+	            };
+	    if (loadDelta <= 3000) {
+	        setTimeout(function() {
+	            $('.preloader').addClass('preloader__runAnimationNow');
+	        }, 3000 - loadDelta);
+	        setTimeout(function() {
+	            TweenMax.staggerFrom('.menuLink', 0.9, { x: 30, y: -25, opacity: 0 }, 0.15);
+	            $('#fullpage').fullpage(fullPageSettings);
 	        }, 2800 - loadDelta);
 	    } else {
 	        TweenMax.staggerFrom('.menuLink', 0.9, { x: 30, y: -25, opacity: 0 }, 0.15);
 	        console.log('more');
 	        $('.preloader').addClass('preloader__runAnimationNow');
-	        $('#fullpage').fullpage({
-	            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-	            anchors: ['accountant', 'law', 'employee', 'footer'],
-	            scrollOverflow: true,
-	            recordHistory: false,
-	            afterLoad: function(origin, destination) {
-	                var loadedSection = this;
-	                animateEl(destination.index);
-
-
-	            },
-
-
-	        });
+	        $('#fullpage').fullpage(fullPageSettings);
 	    }
 
 

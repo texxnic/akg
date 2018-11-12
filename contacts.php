@@ -7,7 +7,7 @@
     <?php include_once 'modules/head.php';?>
 </head>
 
-<body>
+<body class="contactsSelector">
     <?php include_once 'modules/header.php';?>
     <div class="pageContent aboutSec">
         <div class="pageJumbo">

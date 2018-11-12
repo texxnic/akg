@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Амальгама консалтинг-групп</title>
+    <title>О нас | Амальгама консалтинг-групп</title>
+    <meta name="description" content="Комплексные бухгалтерские услуги, и полное обслуживание ООО и ИП по всей России с 10 летним опытом." />
     <?php include_once 'modules/head.php';?>
 </head>
 

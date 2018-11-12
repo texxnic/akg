@@ -4,35 +4,35 @@
                         <span class="footer__h4ghost">УСЛУГИ</span>
                         <h4 class="footer__h4">Бухгалтерские</h4>
                         <div class="footer__linksWrap">
-                            <a href="../accountant.php#acc1" class="footer__link">Аутсорсинг</a>
-                            <a href="../accountant.php#acc2" class="footer__link">Бухгалтерский учет</a>
-                            <a href="../accountant.php#acc3" class="footer__link">Бухгалтерия для торговли</a>
-                            <a href="../accountant.php#acc4" class="footer__link">Нулевая отчетность</a>
-                            <a href="../accountant.php#acc5" class="footer__link">Консультации</a>
-                            <a href="../accountant.php#acc6" class="footer__link">Аренда программ 1C</a>
+                            <a href="../accountant.php#acc1" class="footer__link footer__anchor">Аутсорсинг</a>
+                            <a href="../accountant.php#acc2" class="footer__link footer__anchor">Бухгалтерия для торговли</a>
+                            <a href="../accountant.php#acc3" class="footer__link footer__anchor">Бухгалтерский учет</a>
+                            <a href="../accountant.php#acc4" class="footer__link footer__anchor">Нулевая отчетность</a>
+                            <a href="../accountant.php#acc5" class="footer__link footer__anchor">Консультации</a>
+                            <a href="../accountant.php#acc6" class="footer__link footer__anchor">Аренда программ 1C</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <span class="footer__h4ghost">УСЛУГИ</span>
                         <h4 class="footer__h4">Юридические</h4>
                         <div class="footer__linksWrap">
-                            <a href="../law.php#law1" class="footer__link">Регистрация</a>
-                            <a href="../law.php#law2" class="footer__link">Консалтинг</a>
-                            <a href="../law.php#law3" class="footer__link">Внесение изменений</a>
-                            <a href="../law.php#law4" class="footer__link">Ликвидация</a>
-                            <a href="../law.php#law5" class="footer__link">Открытие заграничных счетов и компаний</a>
-                            <a href="../law.php#law6" class="footer__link">Почтовая рассылка</a>
-                            <a href="../law.php#law7" class="footer__link">Договорная работа</a>
+                            <a href="../law.php#law1" class="footer__link footer__anchor">Регистрация</a>
+                            <a href="../law.php#law2" class="footer__link footer__anchor">Консалтинг</a>
+                            <a href="../law.php#law3" class="footer__link footer__anchor">Внесение изменений</a>
+                            <a href="../law.php#law4" class="footer__link footer__anchor">Ликвидация</a>
+                            <a href="../law.php#law5" class="footer__link footer__anchor">Открытие заграничных счетов и компаний</a>
+                            <a href="../law.php#law6" class="footer__link footer__anchor">Почтовая рассылка</a>
+                            <a href="../law.php#law7" class="footer__link footer__anchor">Договорная работа</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <span class="footer__h4ghost">КАДРЫ И</span>
                         <h4 class="footer__h4">Зарплаты</h4>
                         <div class="footer__linksWrap">
-                            <a href="../employee.php#emp1" class="footer__link">Расчет ФОТ</a>
-                            <a href="../employee.php#emp2" class="footer__link">Персонифицированный учет</a>
-                            <a href="../employee.php#emp3" class="footer__link">Подбор персонала</a>
-                            <a href="../employee.php#emp4" class="footer__link">HR консалтинг</a>
+                            <a href="../employee.php#emp1" class="footer__link footer__anchor">Расчет ФОТ</a>
+                            <a href="../employee.php#emp2" class="footer__link footer__anchor">Персонифицированный учет</a>
+                            <a href="../employee.php#emp3" class="footer__link footer__anchor">Подбор персонала</a>
+                            <a href="../employee.php#emp4" class="footer__link footer__anchor">HR консалтинг</a>
                         </div>
                     </div>
                     <div class="col-md-3">

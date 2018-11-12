@@ -1,12 +1,4 @@
-<script type="text/javascript">
-<!--
-// (c) katanaflash
-setInterval(function() {
-var lenta = document.title;
-document.title = lenta.substr(1, lenta.length)+lenta.charAt(0);
-}, 1000);
--->
-</script>
+
 <div class="preloader">
     <svg id="preloader__logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920.24 199.32">
 

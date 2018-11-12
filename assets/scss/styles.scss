@@ -962,7 +962,7 @@ hr {
     flex-direction: column;
     position: relative;
     color: $bgColor;
-    overflow: hidden;
+    
     h3{
         color: $bgColor;
     }
@@ -1058,7 +1058,7 @@ hr {
     top: 0;
     left: 0;
     content: "";
-    width: 40%;
+    width: 45%;
     height: 100%;
     position: absolute;
     background: $gradient;
@@ -1074,7 +1074,7 @@ hr {
 
 .activeNum {
     width: 100%;
-    height: 10%;
+    right: -10%;
 }
 
 .activeNumEmp {
@@ -1105,6 +1105,7 @@ hr {
     padding-top: 1rem;
     color: $bgColor;
     font-size: 1.1rem;
+    position: relative;
 }
 
 .service__block {
@@ -1171,15 +1172,15 @@ hr {
 }
 
 .bigDigits__ghost_law {
-    background: url(/assets/img/papers.jpg) no-repeat center center fixed;
+    background: url(/assets/img/splashBG.jpg) no-repeat center center fixed;
 }
 
 .bigDigits__ghost_emp {
-    background: url(/assets/img/empNum.jpg) no-repeat center center fixed;
+    background: url(/assets/img/splashBG.jpg) no-repeat center center fixed;
 }
 
 .bigDigits__ghost_acc {
-    background: url(/assets/img/papers.jpg) no-repeat center center fixed;
+    background: url(/assets/img/lightBG.jpg) no-repeat center center fixed;
 }
 
 .bigDigits__ghost {
@@ -2422,7 +2423,13 @@ ul {
 .objectLeft{
     object-position: left;
 }
-
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+    background-color: $mainColor;
+}
+#fp-nav ul li .fp-tooltip {
+    top: -35%;
+    right: 140%;
+}
 
 /*$media-phone: "only screen and (max-width : 350px)";
 $media-small: "only screen and (max-width : 750px)";
@@ -2480,9 +2487,37 @@ $media-hires: "only screen and (min-width : 2000px)";*/
 .priceCard{
     margin-top: 2rem;
 }
+.service {
+        h3::after{
+            content: " - ";
+            color: $mainColor;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            left:0;
+        }
+    }
+    .serviceSectionMobile{
+        padding: 7rem 4rem;
+    }
+    .service__block_1{
+        align-self:flex-start;
+        margin:3rem 0;
+        width: 100%;
+    }
+    .scrollElementWrap{
+        display: none;
+    }
 }
 
 @media #{$media-small} {
+    .numbersAbout p {
+        font-size: 1rem;
+    }
+
+    #fp-nav{
+        display: none;
+    }
 
     .header__menu {
         display: none;

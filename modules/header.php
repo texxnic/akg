@@ -56,15 +56,19 @@
         </div>
     </div>
     <div class="mobileMenu DN">
-        <a href="/" class="mobileMenuLink selected"><h2>Услуги</h2></a>
-        <a href="/about.php" class="mobileMenuLink"><h2>О нас</h2></a>
-        <a href="../prices.php" class="mobileMenuLink"><h2>Цены</h2></a>
-        <a href="../faq.php" class="mobileMenuLink"><h2>FAQ</h2></a>
-        <a href="../testom.php" class="mobileMenuLink"><h2>Отзывы</h2></a>
-        <a href="../contacts.php" class="mobileMenuLink"><h2>Контакты</h2></a>
+        <a href="/" id="servicesSelectorMob" class="mobileMenuLink"><h2>Услуги</h2></a>
+        <a href="/about.php" id="aboutSelectorMob" class="mobileMenuLink"><h2>О нас</h2></a>
+        <a href="../prices.php" id="priceSelectorMob" class="mobileMenuLink"><h2>Цены</h2></a>
+        <a href="../faq.php" id="faqSelectorMob" class="mobileMenuLink"><h2>FAQ</h2></a>
+        <a href="../testom.php" id="testomSelectorMob" class="mobileMenuLink"><h2>Отзывы</h2></a>
+        <a href="../contacts.php" id="contactsSelectorMob" class="mobileMenuLink"><h2>Контакты</h2></a>
     </div>
     <script>
         var selector = $("body").attr('class'); 
-        var str = '#'+selector;
-        $(str).addClass('selected');
+        if (selector) {
+            var str = '#'+selector;
+            var strMob = '#'+selector + 'Mob';
+            $(str).addClass('selected');
+            $(strMob).addClass('selected');
+            }
     </script>
