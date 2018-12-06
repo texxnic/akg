@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Амальгама консалтинг-групп</title>
+    <title>FAQ | Амальгама консалтинг-групп</title>
+    <meta name="description" content="Ответы на часто задаваемые вопросы." />
     <?php include_once 'modules/head.php';?>
 </head>
 
@@ -24,13 +25,14 @@
                     <h3>Здесь вы можете посмотреть ответы на частозадаваемые вопросы (FAQ).</h3>
                     <p class="aboutFirstP">Если вы не нашли ответ на свой вопрос, воспользуйтесь формой внизу</p>
                 </div>
+                <img src="assets/img/logoSimpleWhite.svg" class="pageJumbo__ghost" alt="">
             </div>
         </div>
         <div class="pageDescription">
             <div class="container-lessfluid aboutSection_white aboutSection">
                 <div class="about_column1 about_column">
                     <div class="col1warp">
-                        <h4>Юридические услуги</h4>
+                        <h4>Бухгалтерские услуги</h4>
                         <span class="divider">-</span>
                     </div>
                 </div>
@@ -80,10 +82,10 @@
                 </div>
 
             </div>
-            <div class="container-lessfluid aboutSection_white aboutSection">
+            <div class="container-lessfluid aboutSection_dark aboutSection">
                 <div class="about_column1 about_column">
                     <div class="col1warp">
-                        <h4>Бухгалтерские услуги</h4>
+                        <h4>Юридические услуги</h4>
                         <span class="divider">-</span>
                     </div>
                 </div>
@@ -198,6 +200,7 @@
 
 <script src="assets/js/odometer.min.js"></script>
 <script src="assets/js/faq.js"></script>
+<script src="assets/js/ghostAnimation.js"></script>
 
 
 </html>

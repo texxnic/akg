@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Амальгама консалтинг-групп</title>
+    <title>Цены | Амальгама консалтинг-групп</title>
+    <meta name="description" content="Цены на услуги компании Амальгама консалтинг-групп" />
     <?php include_once 'modules/head.php';?>
 </head>
 
 <body class="priceSelector">
+    
     <?php include_once 'modules/header.php';?>
     <div class="pageContent pricesSec">
         <div class="pageJumbo">
@@ -158,7 +160,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="container-lessfluid aboutSection_white aboutSection">
+                                    <div class="container-lessfluid aboutSection_dark aboutSection">
                                         <div class="about_column1 about_column">
                                             <div class="col1warp">
                                                 <h4>Другие услуги</h4>

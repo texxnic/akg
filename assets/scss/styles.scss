@@ -122,9 +122,7 @@ h5 {
     letter-spacing: 2rem;
 }
 
-button:hover {
-    transform: scale(1.05);
-}
+
 
 button:active {
     transform: scale(0.9);
@@ -301,9 +299,7 @@ button:active {
     z-index: -1;
     transform: skew(-30deg);
     background-color: red;
-    -webkit-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.7);
-    -moz-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.7);
-    box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 0.7);
+   
 }
 
 .fp-completely .layer__textWrap:after {
@@ -342,12 +338,37 @@ button:active {
     right: 0;
     
 }
+.testomForm{
+    padding-top: 2rem;
+}
 .aboutService{
      background: url(/assets/img/splashBG.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
+    &:after{
+        content:"";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 2;
+        transition: width 0.5s;
+    }
+}
+.aboutServiceActive{
+    &:after{
+        
+        width: 0%;
+        transition: width 0.5s;
+        
+    }
 }
 .aboutService__first {
     overflow: hidden;
@@ -427,11 +448,18 @@ button:active {
 .aboutSection_white {
     background-color: $white;
     color: $bgColor;
-    /*background: url(/assets/img/aboutCont.jpg) no-repeat center center;
+/*     background: url(/assets/img/whiteBG.jpg) no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
+}
+.aboutSection_dark {
+    background-color: $bgColor;
+    color: $white;
+    .question__body, .question{
+        background-color: #282626;
+    }
 }
 
 .mobileHeader {
@@ -469,7 +497,7 @@ button:active {
 
     h3 {
         position: static;
-        z-index: 3;
+        z-index: 1;
     }
 
 }
@@ -542,9 +570,6 @@ button:active {
     }
 
     a:hover {
-        -webkit-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 1);
-        -moz-box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 1);
-        box-shadow: -1px 10px 58px -10px rgba(230, 48, 95, 1);
         transition: 0.3s;
         text-decoration: underline;
     }
@@ -713,6 +738,7 @@ button,
     transition: 0.3s;
 }
 
+
 .aboutSection {
     display: flex;
     padding: 8rem 4rem;
@@ -753,7 +779,6 @@ button,
 }
 
 .about_column2Wide {
-    margin-right: calc(14rem + 5vw);
     width: 100%;
 
     .row {
@@ -778,6 +803,10 @@ button,
     color: white;
     transition: 0.3s;
 }
+.leaveReply_service{
+    color: $bgColor;
+    border-color: $bgColor; 
+}
 
 .leaveReply__border {
     background: transparent;
@@ -787,9 +816,8 @@ button,
 }
 
 button:hover {
-    border: 1px solid $mainColor;
+    border-color:$mainColor;
     cursor: pointer;
-    color: white;
     transition: 0.3s;
 
 }
@@ -877,6 +905,7 @@ video::-webkit-media-controls {
 .footer__links {
     display: flex;
     justify-content: space-around;
+    a{text-decoration: none;}
 }
 
 .footer__h4ghost {
@@ -944,10 +973,6 @@ hr {
     padding: 5rem 0;
 }
 
-.paddedText {
-    padding-left: 1.7rem;
-    padding-top: 1rem;
-}
 
 .pageContent__containerPaddings {
     padding: 3rem 0;
@@ -1047,6 +1072,7 @@ hr {
 
 .pageContent__section {
     position: relative;
+    overflow: hidden;
 }
 
 .jumboContent {
@@ -1102,7 +1128,6 @@ hr {
 }
 
 .service__desc {
-    padding-top: 1rem;
     color: $bgColor;
     font-size: 1.1rem;
     position: relative;
@@ -1172,11 +1197,11 @@ hr {
 }
 
 .bigDigits__ghost_law {
-    background: url(/assets/img/splashBG.jpg) no-repeat center center fixed;
+    background: url(/assets/img/lightBG.jpg) no-repeat center center fixed;
 }
 
 .bigDigits__ghost_emp {
-    background: url(/assets/img/splashBG.jpg) no-repeat center center fixed;
+    background: url(/assets/img/lightBG.jpg) no-repeat center center fixed;
 }
 
 .bigDigits__ghost_acc {
@@ -1195,9 +1220,12 @@ hr {
     -o-background-size: cover;
     background-size: cover;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.aboutFirstAnimation{
+    display: block;
+}
 .bigDigits__desc {
     text-align: center;
 
@@ -1354,7 +1382,7 @@ hr {
     bottom: 2.5rem;
 
     left: 2rem;
-    z-index: 5;
+    z-index: 1;
     padding-right: 1.5rem;
 
     p {
@@ -1363,6 +1391,89 @@ hr {
         width: 70%;
     }
 }
+
+
+
+inpit, .input, .inputTextarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #282828;
+    color: #555;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.5rem;
+    
+    
+    
+    position: relative;
+    
+    width: 100%;
+  }
+  .contactForm{
+    margin-top: 2rem;
+  }
+  .input:focus {
+    outline: none;
+  }
+  .inputWrap{
+    position: relative;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  
+  }
+
+  .inputTextarea::-webkit-input-placeholder {
+    color: #AAA;
+  }
+  .inputWrap i{
+        margin-right: 0.5rem;
+        color: #AAA;
+      }
+ 
+  .contactForm{
+      input, textarea, button{
+          margin-top: 2rem;
+      }
+  }
+  input::-webkit-input-placeholder {
+    color: #AAA;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: #78B64B;
+  }
+  
+  .input:focus + .underline {
+    transform: scale(1);
+  }
+  .contactCard__submit:disabled{
+    opacity: 0.3;
+    color: gray;
+  
+  }
+  .contactCard__submit:disabled:hover{
+     transform: none;
+     border: none;
+     color: gray;
+     cursor: auto;
+  
+  }
+  .underline {
+    background-color: #78B64B;
+      display: inline-block;
+      height: 2px;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      width: 100%;
+  }
+  
 
 .contactForm,
 .testomForm {
@@ -1380,8 +1491,7 @@ hr {
 
 
     button {
-        width: 100%;
-        padding: 1rem 0;
+        padding: 1rem 2rem;
     }
 }
 
@@ -1484,7 +1594,7 @@ input[type=checkbox] {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='#fcc7a1', GradientType=0);
 }
 
-input[type=radio]+label {}
+
 
 .borderedButton {
     display: inline-block;
@@ -1729,7 +1839,7 @@ input[type="range"] {
     filter: blur(1px);
     transition: 1s;
 
-    :hover {}
+ 
 }
 
 .calcFin {
@@ -1772,9 +1882,8 @@ input[type="range"] {
         -webkit-appearance: none;
     }
 
-    .input-group {}
-
-    .input-group input[type='button'] {}
+    
+   
 
     .input-group .button-minus,
     .input-group .button-plus {
@@ -1795,7 +1904,7 @@ input[type="range"] {
         color: $blueAccent;
     }
 
-    .button-plus {}
+  
 
     input[type="number"] {
         -moz-appearance: textfield;
@@ -1829,9 +1938,6 @@ input[type="range"] {
 
     &.question_active {
         background-color: $lightAccent;
-        -webkit-box-shadow: -1px 2px 46px -10px rgba(116, 118, 179, 0.61);
-        -moz-box-shadow: -1px 2px 46px -10px rgba(116, 118, 179, 0.61);
-        box-shadow: -1px 2px 46px -10px rgba(116, 118, 179, 0.61);
         transform: scale(1.02);
         position: relative;
         z-index: 2;
@@ -1875,11 +1981,6 @@ input[type="range"] {
     padding: 3rem 4rem;
 }
 
-.cardLightShadow {
-    -webkit-box-shadow: 3px 0px 63px 1px rgba(240, 240, 253, 1);
-    -moz-box-shadow: 3px 0px 63px 1px rgba(240, 240, 253, 1);
-    box-shadow: 3px 0px 63px 1px rgba(240, 240, 253, 1);
-}
 
 .priceCard_Wrap {
     background-color: $bgColor;
@@ -1890,6 +1991,9 @@ input[type="range"] {
     padding: 2rem;
     position: relative;
     background-size: cover;
+    -webkit-box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.3);
 
     h5 {
         margin-top: 0;
@@ -2024,6 +2128,15 @@ ul {
 .cardsPaddings {
     padding-top: 3rem;
 }
+.grecaptcha-badge{
+    display: none;
+}
+.grecaptcha-badge__display{
+    display: block;
+}
+.footer__phone{
+    text-decoration: none;
+}
 
 .contactCard {
     background-color: #fff;
@@ -2032,6 +2145,7 @@ ul {
 
 .contactCard__submit {
     background-color: $mainColor;
+    color: $white;
 }
 
 .contactinfo {
@@ -2113,7 +2227,6 @@ ul {
     margin: 1rem;
     flex-grow: 1;
     flex-shrink: 1;
-    box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
     overflow: hidden;
     color: $bgColor;
 }
@@ -2127,15 +2240,23 @@ ul {
 
 .testomForm {
     form {
-        background-color: #fff;
-        box-shadow: 3px 0px 63px 1px rgba(232, 232, 249, 0.5803921568627451);
         padding: 0 1rem;
         padding-bottom: 0.1rem;
         margin: 1rem;
         max-width: 80rem;
-
+        input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #282828;
+            color: #555;
+            box-sizing: border-box;
+            font-size: 1rem;
+            padding: 0.5rem;
+            position: relative;
+            width: 100%;
+        }
         button {
-            background-color: $blueAccent;
+            background-color: $mainColor;
             color: white;
             margin: 0;
             padding: 0;
@@ -2144,7 +2265,7 @@ ul {
             justify-content: center;
             -ms-align-items: center;
             align-items: center;
-            width: calc(100% - 30px);
+            
             margin-left: 15px !important;
         }
 
@@ -2154,7 +2275,6 @@ ul {
             background-color: $white;
             height: 3rem;
             margin-bottom: 1.5rem;
-            border-radius: 5px;
             font-size: 1rem;
             padding: 1rem;
             font-family: 'Roboto Slab', serif;
@@ -2163,10 +2283,18 @@ ul {
             vertical-align: top;
             margin-bottom: 0;
             transition: 0.3s;
-            background-color: #fff;
             margin-left: 15px;
             overflow: hidden;
             resize: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #282828;
+            color: #555;
+            box-sizing: border-box;
+            font-size: 1rem;
+            padding: 0.5rem;
+            position: relative;
+            width: 100%;
 
             &::-webkit-input-placeholder {
                 /* Chrome/Opera/Safari */
@@ -2204,7 +2332,8 @@ ul {
         .testomBut {
             height: 3rem;
             margin-top: 2rem;
-            border-radius: 10px;
+            padding: 1rem 2rem;
+            
         }
 
         textarea {
@@ -2213,7 +2342,7 @@ ul {
             height: 10rem;
             position: relative;
 
-            &:before {}
+          
         }
     }
 }
@@ -2275,18 +2404,6 @@ ul {
 }
 
 
-.testomWrap:nth-child(4n+3) {
-    background-color: $white;
-
-    h5 {
-
-        &:before,
-        &:after {
-
-            color: $white;
-        }
-    }
-}
 
 .lds-roller {
   display: inline-block;
@@ -2383,18 +2500,7 @@ ul {
 }
 
 
-.testomWrap:nth-child(4n+1) {
-    background-color: $white;
 
-    h5 {
-
-        &:before,
-        &:after {
-
-            color: $white;
-        }
-    }
-}
 
 .aboutJumbo__h3 {
     margin: 0 1rem;
@@ -2430,6 +2536,42 @@ ul {
     top: -35%;
     right: 140%;
 }
+.modalForm{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contactFormWrap{
+        padding: 3rem 5rem;
+        position: relative;
+        .form__closeButton{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: $white;
+            background-color: $bgColor;
+            padding: 0.5rem 1rem;
+            transition:0.2s;
+            &:hover{
+                background-color: red;
+                opacity: 0.6;
+                transition:0.2s;
+            }
+            &:active{
+                background-color: red;
+            }
+        }
+    }
+    
+}
+.contactFormWrap{
+    background-color: $white;
+    color: $bgColor;
+}
 
 /*$media-phone: "only screen and (max-width : 350px)";
 $media-small: "only screen and (max-width : 750px)";
@@ -2444,12 +2586,33 @@ $media-hires: "only screen and (min-width : 2000px)";*/
 @media #{$media-large} {
 
 
+.priceSelector{
     .layer__textBlock {
         width: 60%;
     }
+    .container-lessfluid,.caclWrap{
+        flex-direction: column;
+    }
+    .about_column1{
+        text-align: left;
+        width: 100%;
+    }
+    .about_column2{
+        width: 100%;
+    }
+}
 }
 
 @media #{$media-medium} {
+    .header__menu {
+        display: none;
+    }
+    .about_column3{
+        width: 100%;
+    margin-left: 0;
+    margin-top: 4rem;
+    }
+    
     .layer__second .layer__textBlock {
     left: 7%;
 }   
@@ -2508,6 +2671,9 @@ $media-hires: "only screen and (min-width : 2000px)";*/
     .scrollElementWrap{
         display: none;
     }
+    .mobileHeader {
+        display: flex;
+    }
 }
 
 @media #{$media-small} {
@@ -2519,13 +2685,9 @@ $media-hires: "only screen and (min-width : 2000px)";*/
         display: none;
     }
 
-    .header__menu {
-        display: none;
-    }
+    
 
-    .mobileHeader {
-        display: flex;
-    }
+    
 
     .layer__textBlock {
         width: 90%;
@@ -2578,9 +2740,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
         padding: 2rem 1rem;
     }
 
-    .paddedText {
-        padding-left: 0;
-    }
+
 
     .hiddenSM {
         display: none;
@@ -2590,7 +2750,7 @@ $media-hires: "only screen and (min-width : 2000px)";*/
         margin-top: 1rem;
     }
 
-    .form-title {}
+   
 
     .calcSum__cont {
         display: flex;

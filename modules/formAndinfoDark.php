@@ -1,4 +1,4 @@
-<div class="aboutContent aboutSectionContacts aboutSection_white contentPaddings">
+<div class="aboutContent aboutSectionContacts aboutSection_dark contentPaddings">
     <div class="container-lessfluid aboutSection">
         <div class="about_column1 about_column">
             <div class="col1warp">
@@ -7,23 +7,23 @@
             </div>
         </div>
         <div class="about_column2 about_column2__withText about_column">
-            <div class="contactFormWrap">
+            <div class="contactForm">
                 <div class="contactForm_header">
-                    <h3 class="contactFormInfo__h3">Остались вопросы?</h3>
-                    <p class="contactFormInfo__p">Воспользуйтесь формой снизу для вопроса или заявки.</p>
+                    <h3>Остались вопросы?</h3>
+                    <p>Воспользуйтесь формой снизу для вопроса или заявки</p>
                 </div>
-                <form action="../contactform.php" method="post" class="contactForm">
+                <form action="" class="contactForm">
                     <div class="row inputRow">
                         <div class="col-md-8">
                             <div class="inputWrap">
-                                
+                                <i class="fal fa-user-alt"></i>
                                 <input class="input" placeholder="Ф.И.О.*" name="firstname" type="text" required minlength="2">
                                 <span class="underline"></span>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="inputWrap">
-                                
+                                <i class="fal fa-at"></i>
                                 <input class="input" placeholder="E-mail*" name="email" type="email" required>
                                 <span class="underline"></span>
                             </div>
@@ -32,14 +32,14 @@
                     <div class="row inputRow">
                         <div class="col-md-4">
                             <div class="inputWrap">
-                                
+                                <i class="fal fa-mobile-android-alt"></i>
                                 <input class="input" id="phoneInput" placeholder="+7" name="tel" type="text">
                                 <span class="underline"></span>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="inputWrap">
-                                
+                                <i class="fal fa-building"></i>
                                 <input class="input" placeholder="Комания" name="company" type="text">
                                 <span class="underline"></span>
                             </div>
@@ -47,50 +47,44 @@
                     </div>
                     <div class="row inputRow">
                         <div class="col-md-12">
-                            <textarea rows="1" wrap="soft" placeholder="Ваш вопрос*" class="inputTextarea" name="question" style="overflow:hidden; resize:none;"></textarea>
+                            <textarea rows="1" wrap="soft" placeholder="Ваш вопрос" class="inputTextarea" name="question" style="overflow:hidden; resize:none;"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        
                         <div class="col-md-6">
-                        <button class="g-recaptcha contactCard__submit" data-sitekey="6LdSO3sUAAAAAMft8XDMLFh8BouVolV_qIAV2tRM" data-callback='onSubmit'>Отправить</button>
-                           
+                            <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6Ldz43UUAAAAABbhldxwKuXYxwGuMAsIMYoFPxjo"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contactCard__submit" disabled type="submit">Отправить</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         <script>
-            $('.inputTextarea').focus(function(){
-                $(this).attr('rows', '4');
-            });
-        function onSubmit() {
-            
-            return new Promise(function(resolve, reject) {  
-           
-                var f = $(".contactForm");
-
-$.ajax({
-    type: "POST",
-    url: "contactform.php",
-    data: f.serialize(),
-    dataType: "json",
-    beforeSend: function(){
-        $(".contactFormInfo__h3").html("logging in...");
-    },
-    success: function(response){
-        $(".contactFormInfo__h3").html(response.text);
-        
-    },
-    error: function(){
-        $(".contactFormInfo__h3").html("Failed.");
-    }       
-});
-            }); 
+        function enableBtn() {
+            console.log($(".contactCard__submit"));
+            $(".contactCard__submit").removeAttr("disabled");
+            console.log('disabled');
         }
 
         $('#phoneInput').mask('+7 000 000-00-00');
-       
+        $(".contactForm").one('submit', function(event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            TweenLite.to($(".contactForm"), 0.3, { opacity: 0.5 });
+            $.post("../contactform.php", $(".contactForm").serialize())
+                .done(function() {
+                    $(".contactForm,.contactFormInfo__p").hide();
+                    $(".contactFormInfo__h3").text("Спасибо, ваша заявка отправлена");
+                    // $( ".contactFormInfo__p" ).text("Спасибо, ваша заявка отправлена");
+                })
+                .fail(function() {
+                    alert("Что-то пошло не так, попробуйте еще раз");
+                    TweenLite.to($(".contactForm"), 0.3, { opacity: 1 });
+                });
+
+        });
         </script>
         <div class="about_column3">
             <div class="contactinfo">
@@ -102,9 +96,7 @@ $.ajax({
                     <br>
                 </p>
                 <h4>Телефон</h4>
-                <a class="footer__phone" href="tel:88002344444">8 800 234-44-44</a>
-                <h4>Email</h4>
-                <p>info@acgbux.ru</p>
+                <a class="footer__phone phoneBig" href="tel:88002344444">8 800 234-44-44</a>
             </div>
         </div>
     </div>

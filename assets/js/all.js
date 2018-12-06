@@ -33,3 +33,8 @@ $(document).ready(function() {
     // });
 
 });
+$('input').focus(function(){
+    if($('.grecaptcha-badge')){
+        $('.grecaptcha-badge').addClass('grecaptcha-badge__display');
+    }
+});

@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Амальгама консалтинг-групп</title>
+    <title>Отзывы | Амальгама консалтинг-групп</title>
+    <meta name="description" content="Беспринципно честные отзывы о компании Амальгама консалтинг-групп." />
     <?php include_once 'modules/head.php';?>
 </head>
 
 <body class="testomSelector">
     <?php include_once 'modules/header.php';?>
     <div class="pageContent pricesSec">
-        <div class="pageJumbo">
-            <div class="container-lessfluid">
-                <div class="col-md-6 jumboContent">
-                    <h2>Отзывы</h2>
-                    <h5 class="pageJumbo__description paddedText"></h5>
+    <div class="pageJumbo">
+            <div class="container-lessfluid aboutSection pageJumbo_aboutSection">
+                <div class="about_column1 about_column">
+                    <div class="col1warp">
+                        <h4>Отзывы</h4>
+                        <span class="divider">-</span>
+                    </div>
+                </div>
+                <div class="about_column2 about_column2__withText about_column">
+                    <h3>Беспринципно честные отзывы о компании Амальгама консалтинг-групп.</h3>
+                    <p class="aboutFirstP"> Вам есть что сказать? Благодарность, замечание, предложение? Напишите ваш отзыв, воспользовавшись формой ниже. Спасибо!</p>
                 </div>
             </div>
+             <img src="assets/img/logoSimpleWhite.svg" class="pageJumbo__ghost" alt="">
         </div>
         <div class="pageDescription">
             <div id="root">
@@ -44,6 +52,6 @@
 <script src="assets/js/calc.js"></script>
 <script src="assets/js/odometer.min.js"></script>
 <script src="assets/js/main.e4231aed.js"></script>
-
+<script src="assets/js/ghostAnimation.js"></script>
 
 </html>

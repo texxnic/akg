@@ -9,7 +9,7 @@
 
     <body class="aboutSelector">
     
-    <?php include_once 'modules/header.php';?>
+    <?php include_once 'modules/headerEn.php';?>
     <div class="pageContent aboutSec">
         <div class="aboutJumbo">
             <div class="aboutJumbo__textWrap">
@@ -121,7 +121,7 @@
                 </div>
             </div>
             
-            <?php include_once 'modules/formAndinfo.php';?> 
+            <?php include_once 'modules/formAndinfoEN.php';?> 
         </div>
         <div class="pageFooter footer">
             <?php include_once 'modules/footer.php';?>
